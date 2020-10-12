@@ -1,6 +1,6 @@
 //get duration of intro vid, make it disappear after one play, and make notify btn and other vid/img appear
 const introVid = document.getElementById('introVid'),
-    secondVid = document.getElementById('secondVid'),
+    loopVid = document.getElementById('loopVid'),
     notifyBtn = document.getElementById('notifyBtn'),
     countdown = document.getElementById('countdown');
 
@@ -12,7 +12,7 @@ introVid.addEventListener('durationchange', function() {
 function turnOffIntroVid(duration){
     setTimeout(function(){
         introVid.style.display = "none";
-        show(secondVid);
+        show(loopVid);
         show(notifyBtn);
         show(countdown);
     }, 10)
@@ -66,9 +66,9 @@ function startCountdown(){
         const now = new Date();
         const timeLeft = countDownDate - now;
 
-        const daysLeft = ('0' + Math.floor(timeLeft / (1000 * 60 * 60 * 24))).slice(-2);
-        const hoursLeft = ('0' + Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))).slice(-2);
-        const minsLeft = ('0' + Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60))).slice(-2);
+        const daysLeft = ('0' + Math.floor(timeLeft / (1000 * 60 * 60 * 24))).slice(-2) + ' :';
+        const hoursLeft = ('0' + Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))).slice(-2) + ' :';
+        const minsLeft = ('0' + Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60))).slice(-2) + ' :';
         const secsLeft = ('0' + Math.floor((timeLeft % (1000 * 60)) / 1000)).slice(-2);
 
 

@@ -11,7 +11,7 @@ html{
 }
 
 body{
-    background-color: #1f1f1f;
+    background-color: black;
     box-sizing: border-box;
     margin: 0;
 }
@@ -25,7 +25,7 @@ body{
 .mainPageBg{
     position: absolute;
     height: 100vh;
-    background: url(landingBg.jpg) no-repeat center;
+    /*background: url(landingBg.jpg) no-repeat center;*/
     background-size: cover;
     left: 0;
     top: 0;
@@ -34,10 +34,17 @@ body{
     z-index: -10;
 }
 
-#secondVid{
+#loopVid{
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -10;
     visibility: hidden;
     opacity: 0.0;
-    transition: visibility 1s, opacity 1s;
+    
 }
 
 #introVid{
@@ -92,7 +99,7 @@ h2{
     color: white;
     font-family: "ff-nexus-typewriter", sans-serif;
     font-weight: 400;
-    font-size: 20pt;
+    font-size: 3vw;
     text-align: center;
     text-transform: uppercase;
 }
@@ -246,7 +253,7 @@ p{
 
 #countdown{
     display: flex;
-    padding-top: 200px;
+    padding-top: 250px;
     box-sizing: border-box;
     align-items: flex-start;
     visibility: hidden;
@@ -256,7 +263,6 @@ p{
 
 #days > h2, #hours > h2, #mins > h2, #secs > h2{
     position: relative;
-    width: 175px;
 }
 
 .timeLabel{
@@ -268,7 +274,7 @@ p{
 
 #dayCount, #hourCount, #minCount, #secCount{
     margin: 0px 35px;
-    font-size: 70pt;
+    font-size: 8vw;
     font-family: "montserrat", sans-serif;
     font-weight: 600;
 }
