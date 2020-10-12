@@ -86,7 +86,7 @@ startCountdown();
 // when next button is clicked, move each item to the left by a certain amount
 // item position should equal the distance from the center * a certain amount
 
-const carousel = document.getElementById('carousel'),
+/* const carousel = document.getElementById('carousel'),
     items = document.getElementsByClassName('carouselItem'),
     prevBtn = document.getElementById('prevBtn'),
     nextBtn = document.getElementById('nextBtn');
@@ -98,3 +98,18 @@ function setInitialPosition(){
 }
 
 setInitialPosition();
+ */
+
+//save the value of the email input when someone clicks it
+
+function saveEmail(){
+    let confirmEmail = document.getElementById('submitBtn'),
+        email = '';
+
+    confirmEmail.addEventListener('click', function() {
+        email = document.getElementById('emailInput').value;
+        console.log(email);
+    });
+}
+
+saveEmail();
