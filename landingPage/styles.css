@@ -32,8 +32,8 @@ body{
 }
 
 #aboutPageWrap{
-    background: url(whiteLines.png) no-repeat center;
-    background-size: cover;
+    /* background: url(whiteLines.png) no-repeat center;
+    background-size: cover; */
 }
 
 .aboutBodyRow{
