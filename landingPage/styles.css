@@ -82,6 +82,7 @@ body{
 #mainPageWrap{
     grid-template-rows: auto 1fr 1fr;
     place-items: center;
+    position: relative;
 }
 
 .aboutTitleRow, .processTitleRow{
@@ -273,7 +274,7 @@ p{
 
 #countdown{
     display: flex;
-    padding-top: 250px;
+    padding-top: 40vh;
     box-sizing: border-box;
     align-items: center;
     visibility: hidden;
@@ -293,6 +294,7 @@ p{
     text-align: center;
     margin: 0px;
     opacity: 0.7;
+    font-size: 1.5vh;
 }
 
 #dayCount, #hourCount, #minCount, #secCount{
@@ -329,7 +331,7 @@ p{
     background: none;
     font-family: "rubik", sans-serif;
     font-weight: 600;
-    font-size: 12pt;
+    font-size: 2vh;
     border-radius: 20px;
     padding: 6px 52px;
     text-transform: uppercase;
@@ -446,5 +448,14 @@ p{
     
     #introVid{
         height: 70vh;
+    }
+
+    .aboutBodyRow{
+        width: 75%;
+    }
+
+    .notifyRow{
+        position: absolute;
+        bottom: 15vh;
     }
   }
