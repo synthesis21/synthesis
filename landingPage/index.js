@@ -16,7 +16,7 @@ function turnOffIntroVid(duration){
         loopVid.play();
         show(notifyBtn);
         show(countdown);
-    }, 10)
+    }, duration)
 }
 
 //modal
