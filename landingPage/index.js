@@ -143,8 +143,8 @@ function saveEmail(){
         email = '';
 
     confirmEmail.addEventListener('click', function() {
-        email = document.getElementById('emailInput').value;
-        console.log(email);
+/*         email = document.getElementById('emailInput').value;
+        console.log(email); */
         confirmEmail.innerHTML = "YOU'RE ON THE LIST!"
 
         setTimeout(function(){

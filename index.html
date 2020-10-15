@@ -131,9 +131,13 @@
             <span id="closeModal">&times;</span>
             <h2>Keep Me Posted</h2>
             <p>Enter your email to get notified (once!) when our full site and exhibition are&nbsp;up.</p>
-            <input type="email" name="email" id="emailInput" placeholder="me123@gmail.com">
+            <!-- <input type="email" name="email" id="emailInput" placeholder="me123@gmail.com">
             <br>
-            <button id="submitBtn">Notify Me!</button>
+            <button id="submitBtn">Notify Me!</button> -->
+            <form action="https://formspree.io/f/xdopewlo" method="POST">
+                <input name="Email" id="email" type="email" placeholder="me123@gmail.com" class="emailInput">
+                <button type="submit" id="submitBtn">Notify Me!</button>
+            </form>
         </div>
     </div>
     <script src="landingPage/index.js"></script>

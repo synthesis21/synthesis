@@ -128,8 +128,6 @@ body{
     z-index: -10;
     visibility: hidden;
     opacity: 0.0;
-    
-    
 }
 
 #introVid{
@@ -448,7 +446,7 @@ p{
     cursor: pointer;
 }
 
-#emailInput{
+.emailInput{
     width: 100%;
     padding: 12px;
     border-radius: 25px;
