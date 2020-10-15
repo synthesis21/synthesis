@@ -16,6 +16,10 @@ body{
     margin: 0;
 }
 
+.navWrap{
+    white-space: nowrap;
+}
+
 #mainPageWrap, #aboutPageWrap, #processPageWrap{
     height: 100vh;
     display: grid;
@@ -315,7 +319,7 @@ p{
     align-items: center;
     visibility: hidden;
     opacity: 0.0;
-    transition: visibility .5s, opacity .5s;
+    transition: visibility .5s ease-in-out, opacity .5s ease-in-out;
     white-space: nowrap;
 }
 
@@ -374,7 +378,7 @@ p{
     cursor: pointer;
     visibility: hidden;
     opacity: 0.0;
-    transition: visibility .5s, opacity .5s, box-shadow .5s ease-in-out;
+    transition: visibility .5s ease-in-out, opacity .5s ease-in-out, box-shadow .5s ease-in-out;
 }
 
 #notifyBtn:hover{
@@ -395,7 +399,7 @@ p{
     place-items: center;
     visibility: hidden;
     opacity: 0.0;
-    transition: visibility .5s, opacity .5s;
+    transition: visibility .5s ease-in-out, opacity .5s ease-in-out;
 }
 
 #notifyModal{
