@@ -1,3 +1,18 @@
+@font-face {
+    font-family: "ff-nexus-typewriter", sans-serif;
+    src: url(https://use.typekit.net/mua4zpm.css);
+  }
+
+@font-face {
+    font-family: "montserrat", sans-serif;
+    src: url(https://use.typekit.net/mua4zpm.css);
+}
+
+@font-face {
+    font-family: "rubik", sans-serif;
+    src: url(https://use.typekit.net/mua4zpm.css);
+}
+
 :root {
     --blue: #1752ED;
     --pink: #F5246E;
