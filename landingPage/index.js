@@ -39,7 +39,7 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
 
 //if mobile device is detected show entrance screen and wait until enter is clicked to start vids. Otherwise, play vids right away and hide entrance screen
 if(isMobile){
-    loopSrc.src = 'landingPage/Landing_Loop_Half.mp4';
+    loopSrc.src = 'landingPage/Landing_Loop_Short.mp4';
 
     enterScreen.style.display = "grid";
     enterBtn.style.display = "block";
