@@ -510,4 +510,8 @@ p{
     #notifyModal{
         width: 85%;
     }
+
+    #instaBtn > img{
+        margin-left: 3vw;
+    }
   }
