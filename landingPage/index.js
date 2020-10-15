@@ -9,6 +9,7 @@ const enterBtn = document.getElementById('enterBtn');
 const enterScreen = document.getElementById('enterScreen');
 let introDuration;
 
+introVid.load();
 
 function playVidSequence(duration){
     introVid.play();
@@ -18,12 +19,13 @@ function playVidSequence(duration){
         loopVid.play();
         show(notifyBtn);
         show(countdown);
-    }, duration)
+    }, 8470)
 }
 
 function defineDuration(){
     introVid.addEventListener('durationchange', function() {
         introDuration = 1000 * (introVid.duration);
+        console.log(introDuration);
         playVidSequence(introDuration);
     });
 }
