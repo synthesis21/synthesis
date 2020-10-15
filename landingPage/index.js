@@ -24,9 +24,13 @@ if(isMobile){
     enterBtn.style.display = "block";
 
     enterBtn.addEventListener('click', ()=>{
+        hide(introVid);
         enterScreen.style.display = "none";
         enterBtn.style.display = "none";
+        show(loopVid);
         loopVid.play();
+        show(notifyBtn);
+        show(countdown);
         /* introVid.play();
         playVidSequence(introDuration); */
     });
