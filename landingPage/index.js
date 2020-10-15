@@ -6,11 +6,12 @@ const introVid = document.getElementById('introVid'),
     notifyBtn = document.getElementById('notifyBtn'),
     countdown = document.getElementById('countdown');
 
-introVid.addEventListener('durationchange', function() {
-    const introDuration = 1000 * (introVid.duration);
+/* introVid.addEventListener('durationchange', function() {
+ */    const introDuration = 1000 * (introVid.duration);
     turnOffIntroVid(introDuration);
-});
-
+    console.log(introDuration);
+/* });
+ */
 function turnOffIntroVid(duration){
     setTimeout(function(){
         introVid.style.display = "none";
@@ -18,7 +19,7 @@ function turnOffIntroVid(duration){
         loopVid.play();
         show(notifyBtn);
         show(countdown);
-    }, 10)
+    }, duration)
 }
 
 
