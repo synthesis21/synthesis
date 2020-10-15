@@ -26,11 +26,12 @@ if(isMobile){
     enterBtn.addEventListener('click', ()=>{
         enterScreen.style.display = "none";
         enterBtn.style.display = "none";
-        introVid.play();
-        playVidSequence(introDuration);
+        loopVid.play();
+        /* introVid.play();
+        playVidSequence(introDuration); */
     });
 } else{
-    introVid.play();
+    loopVid.pause();
     playVidSequence(introDuration);
 }
 
