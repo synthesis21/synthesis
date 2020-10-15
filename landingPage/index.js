@@ -14,6 +14,7 @@ window.mobileCheck = function() {
 
 if(mobileCheck){
     loopSrc.src = 'landingPage/Landing_Loop_Half.mp4';
+    countdown.style.display = "none";
 }
 
 /* introVid.addEventListener('durationchange', function() {
