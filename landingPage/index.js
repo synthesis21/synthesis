@@ -7,7 +7,26 @@ const countdown = document.getElementById('countdown');
 const loopSrc = document.getElementById('loopSrc');
 const enterBtn = document.getElementById('enterBtn');
 const enterScreen = document.getElementById('enterScreen');
-const introDuration = 1000 * (introVid.duration);
+let introDuration;
+
+
+function playVidSequence(duration){
+    introVid.play();
+    setTimeout(function(){
+        introVid.style.display = "none";
+        show(loopVid);
+        loopVid.play();
+        show(notifyBtn);
+        show(countdown);
+    }, duration)
+}
+
+function defineDuration(){
+    introVid.addEventListener('durationchange', function() {
+        introDuration = 1000 * (introVid.duration);
+        playVidSequence(introDuration);
+    });
+}
 
 var isMobile = false; //initiate as false
 // device detection
@@ -31,26 +50,10 @@ if(isMobile){
         loopVid.play();
         show(notifyBtn);
         show(countdown);
-        /* introVid.play();
-        playVidSequence(introDuration); */
     });
 } else{
+    defineDuration();
     loopVid.pause();
-    playVidSequence(introDuration);
-}
-
-/* introVid.addEventListener('durationchange', function() {
- */ 
-/* });
- */
-function playVidSequence(duration){
-    setTimeout(function(){
-        introVid.style.display = "none";
-        show(loopVid);
-        loopVid.play();
-        show(notifyBtn);
-        show(countdown);
-    }, duration)
 }
 
 
