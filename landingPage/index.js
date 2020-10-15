@@ -13,7 +13,7 @@ window.mobileCheck = function() {
 }
 
 if(mobileCheck){
-    loopSrc.src = 'landingPage/Landing_Loop_720.mov';
+    loopSrc.src = 'landingPage/Landing_Loop_Half.mp4';
 }
 
 /* introVid.addEventListener('durationchange', function() {
