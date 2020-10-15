@@ -1,4 +1,6 @@
 //get duration of intro vid, make it disappear after one play, and make notify btn and other vid/img appear
+window.onload = (event) => {
+    
 const introVid = document.getElementById('introVid'),
     loopVid = document.getElementById('loopVid'),
     notifyBtn = document.getElementById('notifyBtn'),
@@ -16,8 +18,9 @@ function turnOffIntroVid(duration){
         loopVid.play();
         show(notifyBtn);
         show(countdown);
-    }, duration)
+    }, 10)
 }
+
 
 //modal
 const modalWrap = document.getElementById('modalBg'),
@@ -110,7 +113,18 @@ function saveEmail(){
     confirmEmail.addEventListener('click', function() {
         email = document.getElementById('emailInput').value;
         console.log(email);
+        confirmEmail.innerHTML = "YOU'RE ON THE LIST!"
+
+        setTimeout(function(){
+            hide(modalWrap);
+            show(notifyBtn);
+        }, 1200);
+        setTimeout(function(){
+            confirmEmail.innerHTML = "NOTIFY ME!"
+        }, 1500);
     });
 }
 
 saveEmail();
+
+  };
