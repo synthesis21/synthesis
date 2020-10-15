@@ -37,6 +37,7 @@ body{
     border-bottom: 2px solid var(--blue);
     font-size: 2vh;
     padding: 0px;
+    margin-top: -8vh;
 }
 
 .navWrap{
