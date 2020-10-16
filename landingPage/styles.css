@@ -613,14 +613,15 @@ h3{
     }
 
     .gallery {
-        max-height: 80vh;
+        max-height: 100vh;
+        margin-top: -25vh;
     }
 
     .flickity-viewport {
-        max-height: 80vh;
+        max-height: 100vh;
     }
     .flickity-slider {
-        max-height: 80vh;
+        max-height: 100vh;
     }
     .processVid{
         max-height: 100%;
