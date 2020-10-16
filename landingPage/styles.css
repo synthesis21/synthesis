@@ -545,7 +545,7 @@ h3{
   }
 
   .flickity-page-dots{
-    bottom: -25px;
+    bottom: auto;
   }
 
   .flickity-page-dots .dot{
