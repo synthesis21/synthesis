@@ -616,7 +616,7 @@ h3{
         max-height: 50vh;
     }
 
-    .gallery-viewport {
+    .flickity-viewport {
         max-height: 50vh;
     }
   }
