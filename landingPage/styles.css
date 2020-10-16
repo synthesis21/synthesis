@@ -611,4 +611,8 @@ h3{
     .flickity-button{
         display: none!important;
     }
+
+    .gallery {
+        max-height: 50vh;
+    }
   }
