@@ -619,4 +619,7 @@ h3{
     .flickity-viewport {
         max-height: 50vh;
     }
+    .flickity-slider {
+        max-height: 50vh;
+    }
   }
