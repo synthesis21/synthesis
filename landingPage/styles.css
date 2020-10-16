@@ -42,25 +42,26 @@ body{
     margin-top: -8vh;
 }
 
-#mainPageWrap, #aboutPageWrap, #processPageWrap{
+#main, #about, #process{
     height: 100vh;
     display: grid;
     position: relative;
     margin-bottom: 200px;
 }
 
-#processPageWrap{
+#process{
     height: auto;
     margin-bottom: 0px;
     margin-bottom: 100px;
     grid-template-rows: auto 1fr;
+    max-height: 100vh;
 }
 
-#aboutPageWrap{
+#about{
     grid-template-rows: auto 6fr 1fr;
 }
 
-#aboutPageWrap{
+#about{
     position: relative;
 }
 
@@ -172,7 +173,7 @@ body{
     z-index: 100;
 }
 
-#mainPageWrap{
+#main{
     grid-template-rows: auto 1fr 1fr;
     place-items: center;
     position: relative;
@@ -515,6 +516,10 @@ h3{
 }
 
 /* Flickity Carousel ---------------------------------------------------------------------- */
+
+#process{
+    max-height: 100vh;
+}
 
 #videoRow{
     width: 100%;
