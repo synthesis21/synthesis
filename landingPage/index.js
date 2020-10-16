@@ -11,6 +11,27 @@ let introDuration;
 
 introVid.load();
 
+let notified = false;
+
+function saveEmail(){
+    let confirmEmail = document.getElementById('submitBtn'),
+        email = '';
+
+    confirmEmail.addEventListener('click', function() {
+/*         email = document.getElementById('emailInput').value;
+        console.log(email); */
+        confirmEmail.innerHTML = "YOU'RE ON THE LIST!"
+        notified = true;
+        setTimeout(function(){
+            hide(modalWrap);
+            show(notifyBtn);
+        }, 1200);
+        setTimeout(function(){
+            confirmEmail.innerHTML = "NOTIFY ME!"
+        }, 1500);
+    });
+}
+
 function playVidSequence(duration){
     introVid.play();
     setTimeout(function(){
@@ -19,8 +40,7 @@ function playVidSequence(duration){
         loopVid.play();
         show(notifyBtn);
         show(countdown);
-    }, //8470
-    0)
+    }, 8470)
 }
 
 function defineDuration(){
@@ -39,7 +59,7 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
 }
 
 //if mobile device is detected show entrance screen and wait until enter is clicked to start vids. Otherwise, play vids right away and hide entrance screen
-if(isMobile){
+if(isMobile || notified){
     loopSrc.src = 'landingPage/Landing_Loop_Short.mp4';
 
     enterScreen.style.display = "grid";
@@ -144,24 +164,7 @@ setInitialPosition();
 
 //save the value of the email input when someone clicks it
 
-function saveEmail(){
-    let confirmEmail = document.getElementById('submitBtn'),
-        email = '';
 
-    confirmEmail.addEventListener('click', function() {
-/*         email = document.getElementById('emailInput').value;
-        console.log(email); */
-        confirmEmail.innerHTML = "YOU'RE ON THE LIST!"
-
-        setTimeout(function(){
-            hide(modalWrap);
-            show(notifyBtn);
-        }, 1200);
-        setTimeout(function(){
-            confirmEmail.innerHTML = "NOTIFY ME!"
-        }, 1500);
-    });
-}
 
 saveEmail();
 /* 
