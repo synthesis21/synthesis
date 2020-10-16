@@ -50,9 +50,9 @@ body{
 }
 
 #processPageWrap{
-    padding-bottom: 40vh;
     height: auto;
     margin-bottom: 0px;
+    margin-bottom: 100px;
     grid-template-rows: auto 1fr;
 }
 
