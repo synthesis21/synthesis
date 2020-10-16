@@ -622,4 +622,13 @@ h3{
     .flickity-slider {
         max-height: 50vh;
     }
+    .processVid{
+        max-height: 100%;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .processTitleRow{
+        max-height: 10vh;
+    }
   }
