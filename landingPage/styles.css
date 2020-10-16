@@ -16,6 +16,8 @@ body{
     margin: 0;
 }
 
+/* Enter Screen ---------------------------------------------------------------------- */
+
 #enterScreen{
     display: none;
     background: black;
@@ -40,10 +42,6 @@ body{
     margin-top: -8vh;
 }
 
-.navWrap{
-    white-space: nowrap;
-}
-
 #mainPageWrap, #aboutPageWrap, #processPageWrap{
     height: 100vh;
     display: grid;
@@ -52,10 +50,13 @@ body{
 }
 
 #processPageWrap{
+    padding-bottom: 40vh;
+    height: auto;
     margin-bottom: 0px;
+    grid-template-rows: auto 1fr;
 }
 
-#aboutPageWrap, #processPageWrap{
+#aboutPageWrap{
     grid-template-rows: auto 6fr 1fr;
 }
 
@@ -81,6 +82,12 @@ body{
     line-height: 1.5;
 }
 
+/* Nav ---------------------------------------------------------------------- */
+
+.navWrap{
+    white-space: nowrap;
+}
+
 .instaLink{
     text-decoration: none;
     cursor: pointer;
@@ -104,6 +111,31 @@ body{
     top: 4%;
     left: 2%;
     opacity: 1;
+}
+
+.socialRow{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: fixed;
+    z-index: 100;
+    background: rgba(0,0,0,.75);
+}
+
+#fbBtn, #instaBtn{
+    background: none;
+    border: none;
+    padding: 0px;
+    cursor: pointer;
+}
+
+#fbBtn > img, #instaBtn > img{
+    width: 20px;
+    margin-left: 2vw;
+    margin-top: 3px;
 }
 
 .mainPageBg{
@@ -151,31 +183,6 @@ body{
     box-sizing: border-box;
 }
 
-.socialRow{
-    box-sizing: border-box;
-    width: 100%;
-    padding: 10px 25px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    position: fixed;
-    z-index: 100;
-    background: rgba(0,0,0,.75);
-}
-
-#fbBtn, #instaBtn{
-    background: none;
-    border: none;
-    padding: 0px;
-    cursor: pointer;
-}
-
-#fbBtn > img, #instaBtn > img{
-    width: 20px;
-    margin-left: 2vw;
-    margin-top: 3px;
-}
-
 h2{
     color: white;
     font-family: "ff-nexus-typewriter", sans-serif;
@@ -191,6 +198,16 @@ p{
     font-weight: 300;
     font-size: 10pt;
     text-align: left;
+}
+
+h3{
+    color: white;
+    font-family: "montserrat", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 10pt;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .navLink{
@@ -390,7 +407,6 @@ p{
     color: var(--pink);
     background: none;
     font-family: "rubik", sans-serif;
-    font-weight: 600;
     font-size: 2vh;
     border-radius: 20px;
     padding: 6px 52px;
@@ -478,11 +494,6 @@ p{
     white-space: nowrap;
 }
 
-#videoRow{
-    width: 100%;
-   /*  overflow: hidden; */
-}
-
 .carouselPlaceholder{
     text-align: center;
     line-height: 60vh;
@@ -502,6 +513,63 @@ p{
     object-fit: cover;
     width: 100%;
 }
+
+/* Flickity Carousel ---------------------------------------------------------------------- */
+
+#videoRow{
+    width: 100%;
+   /*  overflow: hidden; */
+}
+
+.carouselDescription{
+    text-align: center;
+    width: 100%;
+    color: black;
+}
+
+.processVid{
+    width: 95%;
+    margin: auto;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  body { font-family: sans-serif; }
+  
+  .flickity-button{
+      background: none!important;
+      color: white;
+  }
+
+  .flickity-page-dots{
+    bottom: -25px;
+  }
+
+  .flickity-page-dots .dot{
+      background: rgba(255,255,255,.75);
+      height: 6px;
+      width: 6px;
+  }
+
+  .dot.is-selected{
+    background: white;
+  }
+
+  .gallery {
+      height: 100%;
+  }
+  
+  .gallery-cell {
+    width: 100%;
+    margin-right: 10px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  
 
 @media only screen and (max-width: 820px) {
     #loopVid{
@@ -533,5 +601,9 @@ p{
 
     #instaBtn > img{
         margin-left: 3vw;
+    }
+
+    .flickity-button{
+        display: none!important;
     }
   }

@@ -19,7 +19,8 @@ function playVidSequence(duration){
         loopVid.play();
         show(notifyBtn);
         show(countdown);
-    }, 8470)
+    }, //8470
+    0)
 }
 
 function defineDuration(){
@@ -163,3 +164,16 @@ function saveEmail(){
 }
 
 saveEmail();
+/* 
+function iconChange() {
+    setTimeout(function(){ document.getElementById("icon").href = "../faviconGif1.png";}, 1500);
+    setTimeout(function(){ document.getElementById("icon").href = "../faviconGif2.png";},3000);
+    setTimeout(function(){ document.getElementById("icon").href = "../faviconGif3.png";}, 4500);  
+    setTimeout(function(){ document.getElementById("icon").href = "../faviconGif4.png";}, 6000);  
+}
+
+window.onload = function() {
+    setInterval(function() {
+    iconChange();
+    }, 6000);
+}; */
