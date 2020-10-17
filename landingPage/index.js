@@ -7,6 +7,8 @@ const countdown = document.getElementById('countdown');
 const loopSrc = document.getElementById('loopSrc');
 const enterBtn = document.getElementById('enterBtn');
 const enterScreen = document.getElementById('enterScreen');
+const vidList = document.getElementById('vidList');
+const flickity = document.getElementById('flickityCarousel');
 let introDuration;
 
 introVid.load();
@@ -61,6 +63,8 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
 //if mobile device is detected show entrance screen and wait until enter is clicked to start vids. Otherwise, play vids right away and hide entrance screen
 if(isMobile || notified){
     loopSrc.src = 'landingPage/Landing_Loop_Short.mp4';
+    vidList.style.display = 'flex';
+    flickity.style.display = 'none';
 
     enterScreen.style.display = "grid";
     enterBtn.style.display = "block";
