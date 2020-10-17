@@ -14,6 +14,7 @@ body{
     background-color: black;
     box-sizing: border-box;
     margin: 0;
+    padding-bottom: 30vh;
 }
 
 /* Enter Screen ---------------------------------------------------------------------- */
@@ -613,12 +614,10 @@ h3{
     }
 
     .gallery {
-        max-height: 100vh;
-        margin-top: -25vh;
     }
 
     .flickity-viewport {
-        max-height: 100vh;
+        overflow-y: visible;
     }
     .flickity-slider {
         max-height: 100vh;
@@ -630,6 +629,5 @@ h3{
     }
 
     .processTitleRow{
-        max-height: 10vh;
     }
   }
