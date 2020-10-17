@@ -631,5 +631,6 @@ h3{
     }
 
     .processTitleRow{
+        max-height: 10vh;
     }
   }
