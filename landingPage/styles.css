@@ -618,7 +618,6 @@ h3{
     }
 
     .flickity-viewport {
-        overflow-y: visible;
         max-height: 100vh;
     }
     .flickity-slider {
