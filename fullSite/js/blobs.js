@@ -35,7 +35,7 @@ import * as THREE from '../node_modules/three/build/three.module.js';
 			scene.background = new THREE.Color( 0xffffff );
 			scene.background = new THREE.CubeTextureLoader()
             .setPath( './cubeMap/cube_' )
-            .load( [ 'px.jpg', 'nx.jpg', 'py.jpg', 'ny.jpg', 'pz.jpg', 'nz.jpg' ] );
+            .load( [ 'px.jpg', 'nx.jpg', 'py.jpg', 'ny.jpg', 'pz.jpg', 'nz_white.jpg' ] );
 
 			// LIGHTS
 
@@ -110,7 +110,7 @@ import * as THREE from '../node_modules/three/build/three.module.js';
 			var urls = [
 				path + 'px' + format, path + 'nx' + format,
 				path + 'py' + format, path + 'ny' + format,
-				path + 'pz' + format, path + 'nz' + format
+				path + 'pz' + format, path + 'nz_white' + format
 			];
 
 			var cubeTextureLoader = new THREE.CubeTextureLoader();
