@@ -1,6 +1,8 @@
 const navLinks = document.getElementById('navLinks'),
     menuIcon = document.getElementById('menuIcon'),
-    menu = document.getElementById('menu');
+    menu = document.getElementById('menu'),
+    menuX = document.getElementById('menuXIcon'),
+    navLogo = document.getElementById('navLogo');
 
 var isMobile = false; //initiate as false
 // device detection
@@ -13,15 +15,19 @@ function hide(element){
     element.style.display = 'none';
 }
 
-function show(element){
-    element.style.display = 'inline-block';
+function show(element, display){
+    element.style.display = display;
 }
 
 if (isMobile){
     hide(navLinks);
-    show(menuIcon);
+    show(menuIcon, 'inline-block');
 }
 
 menuIcon.addEventListener('click', () => {
-    show(menu);
+    show(menu, 'flex');
+})
+
+menuX.addEventListener('click', () => {
+    hide(menu);
 })

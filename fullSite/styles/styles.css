@@ -1,4 +1,4 @@
-/* Colors ------------------------------------------------------ */
+/* Colors --------------------------------------------------------------------------- */
 
 :root {
     --blue: #1752ED;
@@ -12,7 +12,7 @@ body{
     margin: 0px;
 }
 
-/* Type ------------------------------------------------------ */
+/* Type --------------------------------------------------------------------------- */
 
 h2{
     font-family: "ff-nexus-typewriter", sans-serif;
@@ -36,7 +36,7 @@ p{
     font-size: 10pt;
 }
 
-/* Navbar ------------------------------------------------------ */
+/* Navbar --------------------------------------------------------------------------- */
 
 #navWrap{
     width: 100%;
@@ -137,7 +137,7 @@ p{
     top: 4px;
 }
 
-/* Navbar Mobile ------------------------------------------------------ */
+/* Mobile Menu --------------------------------------------------------------------------- */
 
 #menuIcon{
     display: none;
@@ -151,9 +151,55 @@ p{
     width: 100vw;
     height: 100vh;
     background: black;
-    opacity: 0.5;
     position: absolute;
     top: 0;
     left: 0;
     z-index: 100;
+    flex-direction: column;
+}
+
+#menuHeader{
+    width: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 2vw;
+    position: relative;
+}
+
+#menuXIcon{
+    width: 20px;
+    height: 20px;
+    background:white;
+}
+
+#menuLinks{
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10vw;
+}
+
+.menuLink{
+    color: white;
+    font-family: "montserrat", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 10pt;
+    text-align: left;
+    text-decoration: none;
+    padding-left: 2vw;
+    text-transform: uppercase;
+    position: relative;
+    padding-top: 5vh;
+    display: block;
+
+    font-size: 12pt;
 }
