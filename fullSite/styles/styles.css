@@ -1,3 +1,159 @@
-#container{
+/* Colors ------------------------------------------------------ */
+
+:root {
+    --blue: #1752ED;
+    --pink: #F5246E;
+    --orange: #F55236;
+    --yellow: #f7bc55;
+    --navy: #051C59;
+}
+
+body{
+    margin: 0px;
+}
+
+/* Type ------------------------------------------------------ */
+
+h2{
+    font-family: "ff-nexus-typewriter", sans-serif;
+    font-weight: 400;
+    font-size: 20pt;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h3{
+    font-family: "montserrat", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 10pt;
+    text-transform: uppercase;
+}
+
+p{
+    font-family: "rubik", sans-serif;
+    font-weight: 300;
+    font-size: 10pt;
+}
+
+/* Navbar ------------------------------------------------------ */
+
+#navWrap{
+    width: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background: white;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 2vw;
+}
+
+#navLinks{
+    display: inline-block;
+}
+
+.navLink{
+    color: black;
+    font-family: "montserrat", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 10pt;
+    text-align: left;
+    text-decoration: none;
+    padding-left: 2vw;
+    text-transform: uppercase;
+    position: relative;
+}
+
+#logoWrap{
+    margin-bottom: -5px;
+}
+
+#navLogo{
+    height: 32px;
+}
+
+.exLink::after, .aboutLink::after, .processLink::after, .exLink::before, .aboutLink::before, .processLink::before{
+    font-family: "montserrat", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 10pt;
+    text-align: left;
+    text-decoration: none;
+    padding-left: 2vw;
+    text-transform: uppercase;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+.exLink::before{
+    content:"exhibition";
+    color: var(--pink);
+}
+
+.exLink::after{
+    content:"exhibition";
+    color: var(--blue);
+}
+
+.aboutLink::before{
+    content:"about us";
+    color:var(--yellow);
+}
+
+.aboutLink::after{
+    content:"about us";
+    color: var(--blue);
+}
+
+.processLink::before{
+    content:"process";
+    color:var(--orange);
+}
+
+.processLink::after{
+    content:"process";
+    color: var(--blue);
+}
+
+.exLink:hover::after, .aboutLink:hover::after, .processLink:hover::after{
+    opacity: 1;
+    left: 10px;
+    top: -4px;
+}
+
+.exLink:hover::before, .aboutLink:hover::before, .processLink:hover::before{
+    opacity: 1;
+    left: -10px;
+    top: 4px;
+}
+
+/* Navbar Mobile ------------------------------------------------------ */
+
+#menuIcon{
+    display: none;
+    width: 20px;
+    height: 20px;
+    background: black;
+}
+
+#menu{
+    display: none;
     width: 100vw;
+    height: 100vh;
+    background: black;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
 }

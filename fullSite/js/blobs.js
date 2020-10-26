@@ -2,6 +2,10 @@ import * as THREE from '../node_modules/three/build/three.module.js';
 		import { OrbitControls } from '../node_modules/three/examples/jsm/controls/OrbitControls.js';
 		import { MarchingCubes } from '../node_modules/three/examples/jsm/objects/MarchingCubes.js';
 
+		const nav = document.getElementById("navWrap");
+		const navHeight = nav.offsetHeight;
+
+
 		var container;
 
 		var camera, scene, renderer;
@@ -73,7 +77,7 @@ import * as THREE from '../node_modules/three/build/three.module.js';
 			renderer = new THREE.WebGLRenderer();
 			//renderer.outputEncoding = THREE.sRGBEncoding;
 			renderer.setPixelRatio( window.devicePixelRatio );
-			renderer.setSize( window.innerWidth, window.innerHeight );
+			renderer.setSize( window.innerWidth, window.innerHeight);
 			container.appendChild( renderer.domElement );
 
 			// CONTROLS
@@ -216,7 +220,7 @@ import * as THREE from '../node_modules/three/build/three.module.js';
 				xpos = window.event.screenX;
 				ypos = window.event.screenY;
 			}
-			console.log(xpos);
+			//console.log(xpos);
 			//document.getElementById("screenCoords").innerHTML = xpos + ", " + ypos;
 		}
 
