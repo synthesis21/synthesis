@@ -72,6 +72,8 @@ p{
 
 #logoWrap{
     margin-bottom: -5px;
+    z-index: 110;
+
 }
 
 #navLogo{
@@ -141,16 +143,15 @@ p{
 
 #menuIcon{
     display: none;
-    width: 20px;
-    height: 20px;
     background: black;
+    width: 15px;
+    height: 15px;
 }
 
 #menu{
     display: none;
     width: 100vw;
-    height: 100vh;
-    background: black;
+    height: 50vh;
     position: absolute;
     top: 0;
     left: 0;
@@ -184,7 +185,8 @@ p{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 10vw;
+
+    padding-right: 10vw;
 }
 
 .menuLink{
@@ -193,13 +195,28 @@ p{
     font-weight: 600;
     font-style: italic;
     font-size: 10pt;
-    text-align: left;
     text-decoration: none;
     padding-left: 2vw;
     text-transform: uppercase;
     position: relative;
     padding-top: 5vh;
     display: block;
+    text-align: right;
+    width: 100%;
 
     font-size: 12pt;
+}
+
+#menuCircle{
+    display: none;
+    background: black;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    position: absolute;
+    top: 10px;
+    right: 2vw;
+    z-index: 100;
+
+    transition: width .2s ease-in-out, height .2s ease-in-out, transform .2s ease-in-out;
 }

@@ -2,7 +2,8 @@ const navLinks = document.getElementById('navLinks'),
     menuIcon = document.getElementById('menuIcon'),
     menu = document.getElementById('menu'),
     menuX = document.getElementById('menuXIcon'),
-    navLogo = document.getElementById('navLogo');
+    navLogo = document.getElementById('navLogo'),
+    menuCircle = document.getElementById('menuCircle');
 
 var isMobile = false; //initiate as false
 // device detection
@@ -21,13 +22,31 @@ function show(element, display){
 
 if (isMobile){
     hide(navLinks);
-    show(menuIcon, 'inline-block');
+    show(menuCircle, 'inline-block');
 }
 
-menuIcon.addEventListener('click', () => {
-    show(menu, 'flex');
+menuCircle.addEventListener('click', () => {
+    circleReveal();
+    setTimeout(function(){
+        menuReveal();
+    }, 100)
 })
 
+function circleReveal(){
+    menuCircle.style.height = window.innerHeight * 1.5 + 'px';
+    menuCircle.style.width = window.innerHeight * 1.5 + 'px';
+    menuCircle.style.transform = 'translate(50%,-50%)';
+}
+
+function menuReveal(){
+    navLogo.src = './images/symbolWhite.png';
+    show(menu, 'flex');
+}
+
 menuX.addEventListener('click', () => {
+    menuCircle.style.height = 20 + 'px';
+    menuCircle.style.width = 20 + 'px';
+    menuCircle.style.transform = 'translate(0,0%)';
+    navLogo.src = './images/symbolBlack.png';
     hide(menu);
 })
