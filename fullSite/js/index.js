@@ -23,9 +23,10 @@ function show(element, display){
 if (isMobile){
     hide(navLinks);
     show(menuCircle, 'inline-block');
+    show(menuIcon, 'flex');
 }
 
-menuCircle.addEventListener('click', () => {
+menuIcon.addEventListener('click', () => {
     circleReveal();
     setTimeout(function(){
         menuReveal();
@@ -46,7 +47,7 @@ function menuReveal(){
 menuX.addEventListener('click', () => {
     menuCircle.style.height = 20 + 'px';
     menuCircle.style.width = 20 + 'px';
-    menuCircle.style.transform = 'translate(0,0%)';
+    menuCircle.style.transform = 'translate(0px,0px)';
     navLogo.src = './images/symbolBlack.png';
     hide(menu);
 })

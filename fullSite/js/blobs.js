@@ -61,7 +61,7 @@ import * as THREE from '../node_modules/three/build/three.module.js';
 
 			// MARCHING CUBES
 
-			resolution = 90;
+			resolution = 80;
 
 			effect = new MarchingCubes( resolution, materials[ current_material ].m, true, true );
 			effect.position.set( 0, 0, 0 );
@@ -251,8 +251,8 @@ import * as THREE from '../node_modules/three/build/three.module.js';
 
 			for ( i = 0; i < numblobs; i ++ ) {
 
-				ballx = Math.sin( i + 1.26 * time * ( 1.03 + 0.5 * Math.cos( 0.21 * i ) ) ) * 0.27 + 0.5 + xpos/8000;
-				bally = Math.abs( Math.cos( i + 1.12 * time * Math.cos( 1.22 + 0.1424 * i ) ) ) * 0.77 + ypos/8000; // dip into the floor
+				ballx = Math.sin( i + 1.26 * time * ( 1.03 + 0.5 * Math.cos( 0.21 * i ) ) ) * 0.27 + 0.5 - xpos/6000;
+				bally = Math.abs( Math.cos( i + 1.12 * time * Math.cos( 1.22 + 0.1424 * i ) ) ) * 0.77 + ypos/6000; // dip into the floor
 				ballz = Math.cos( i + 1.32 * time * 0.1 * Math.sin( ( 0.92 + 0.53 * i ) ) ) * 0.27 + 0.5;
 
 				if ( current_material === 'multiColors' ) {
@@ -307,7 +307,7 @@ import * as THREE from '../node_modules/three/build/three.module.js';
 
 			} */
 
-			var numBlobs = 18;
+			var numBlobs = 15;
 
 			updateCubes( effect, time, numBlobs, false, false, false );
 

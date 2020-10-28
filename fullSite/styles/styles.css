@@ -68,19 +68,24 @@ p{
     padding-left: 2vw;
     text-transform: uppercase;
     position: relative;
+    transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
 }
 
 #logoWrap{
     margin-bottom: -5px;
     z-index: 110;
-
 }
 
 #navLogo{
     height: 32px;
 }
 
-.exLink::after, .aboutLink::after, .processLink::after, .exLink::before, .aboutLink::before, .processLink::before{
+.navLink:hover{
+    color: transparent;
+    text-shadow: 0px 0px 2px rgba(0,0,0,1);
+}
+
+/* .exLink::after, .aboutLink::after, .processLink::after, .exLink::before, .aboutLink::before, .processLink::before{
     font-family: "montserrat", sans-serif;
     font-weight: 600;
     font-style: italic;
@@ -137,15 +142,36 @@ p{
     opacity: 1;
     left: -10px;
     top: 4px;
-}
+} */
 
 /* Mobile Menu --------------------------------------------------------------------------- */
 
 #menuIcon{
     display: none;
+    background: none;
+    width: 45px;
+    height: 20px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    cursor: pointer;
+}
+
+.hamLine{
+    height: 2px;
     background: black;
-    width: 15px;
-    height: 15px;
+}
+
+.hamLine1{
+    width: 36px;
+}
+
+.hamLine2{
+    width: 24px;
+}
+
+.hamLine3{
+    width: 12px;
 }
 
 #menu{
@@ -169,7 +195,7 @@ p{
     white-space: nowrap;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
     padding: 10px 2vw;
     position: relative;
 }
@@ -178,6 +204,7 @@ p{
     width: 20px;
     height: 20px;
     background:white;
+    cursor: pointer;
 }
 
 #menuLinks{
@@ -203,8 +230,14 @@ p{
     display: block;
     text-align: right;
     width: 100%;
+    transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
 
     font-size: 12pt;
+}
+
+.menuLink:hover{
+    color: transparent;
+    text-shadow: 0px 0px 2px rgba(255,255,255,1);
 }
 
 #menuCircle{
@@ -214,9 +247,9 @@ p{
     height: 20px;
     border-radius: 100%;
     position: absolute;
-    top: 10px;
-    right: 2vw;
+    top: -20px;
+    right: -20px;
     z-index: 100;
 
-    transition: width .2s ease-in-out, height .2s ease-in-out, transform .2s ease-in-out;
+    transition: width .25s ease-in-out, height .25s ease-in-out, transform .25s ease-in-out;
 }
