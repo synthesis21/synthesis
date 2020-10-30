@@ -5,6 +5,8 @@ const navLinks = document.getElementById('navLinks'),
     navLogo = document.getElementById('navLogo'),
     menuCircle = document.getElementById('menuCircle');
 
+
+
 var isMobile = false; //initiate as false
 // device detection
 if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|ipad|iris|kindle|Android|Silk|lge |maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i.test(navigator.userAgent) 
@@ -34,9 +36,9 @@ menuIcon.addEventListener('click', () => {
 })
 
 function circleReveal(){
+    //menuCircle.style.transform = 'translate(50%,-50%)';
     menuCircle.style.height = window.innerHeight * 1.5 + 'px';
     menuCircle.style.width = window.innerHeight * 1.5 + 'px';
-    menuCircle.style.transform = 'translate(50%,-50%)';
 }
 
 function menuReveal(){
@@ -47,7 +49,6 @@ function menuReveal(){
 menuX.addEventListener('click', () => {
     menuCircle.style.height = 20 + 'px';
     menuCircle.style.width = 20 + 'px';
-    menuCircle.style.transform = 'translate(0px,0px)';
     navLogo.src = './images/symbolBlack.png';
     hide(menu);
 })

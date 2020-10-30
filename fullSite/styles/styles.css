@@ -10,6 +10,11 @@
 
 body{
     margin: 0px;
+    overflow-x: hidden;
+}
+
+html{
+    box-sizing: border-box!important;
 }
 
 /* Type --------------------------------------------------------------------------- */
@@ -45,7 +50,7 @@ p{
     top: 0;
     left: 0;
     z-index: 100;
-    background: white;
+    background: rgba(255,255,255,0.8);
     white-space: nowrap;
     display: flex;
     align-items: center;
@@ -84,65 +89,6 @@ p{
     color: transparent;
     text-shadow: 0px 0px 2px rgba(0,0,0,1);
 }
-
-/* .exLink::after, .aboutLink::after, .processLink::after, .exLink::before, .aboutLink::before, .processLink::before{
-    font-family: "montserrat", sans-serif;
-    font-weight: 600;
-    font-style: italic;
-    font-size: 10pt;
-    text-align: left;
-    text-decoration: none;
-    padding-left: 2vw;
-    text-transform: uppercase;
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: -1;
-    opacity: 0;
-    transition: all 0.2s ease-in-out;
-}
-
-.exLink::before{
-    content:"exhibition";
-    color: var(--pink);
-}
-
-.exLink::after{
-    content:"exhibition";
-    color: var(--blue);
-}
-
-.aboutLink::before{
-    content:"about us";
-    color:var(--yellow);
-}
-
-.aboutLink::after{
-    content:"about us";
-    color: var(--blue);
-}
-
-.processLink::before{
-    content:"process";
-    color:var(--orange);
-}
-
-.processLink::after{
-    content:"process";
-    color: var(--blue);
-}
-
-.exLink:hover::after, .aboutLink:hover::after, .processLink:hover::after{
-    opacity: 1;
-    left: 10px;
-    top: -4px;
-}
-
-.exLink:hover::before, .aboutLink:hover::before, .processLink:hover::before{
-    opacity: 1;
-    left: -10px;
-    top: 4px;
-} */
 
 /* Mobile Menu --------------------------------------------------------------------------- */
 
@@ -213,7 +159,7 @@ p{
     flex-direction: column;
     justify-content: center;
 
-    padding-right: 10vw;
+    padding-right: 25vw;
 }
 
 .menuLink{
@@ -250,6 +196,47 @@ p{
     top: -20px;
     right: -20px;
     z-index: 100;
+    transform: translate(50%,-50%);
 
     transition: width .25s ease-in-out, height .25s ease-in-out, transform .25s ease-in-out;
+}
+
+/* Loading Screen  --------------------------------------------------------------------------- */
+
+#loader{
+    width: 100%;
+    height: 100%;
+    background: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1010;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#loader > h3{
+    margin-top: 20px;
+}
+
+#loadLogo{
+    height: 100px;
+    animation: loadBlur 4s infinite ease-in-out;
+}
+
+@keyframes loadBlur{
+    0%{
+        filter: blur(0px);
+        transform: translateY(0px);
+    }
+    50%{
+        filter: blur(3px);
+        transform: translateY(10px);
+    }
+    100%{
+        filter: blur(0px);
+        transform: translateY(0px);
+    }
 }

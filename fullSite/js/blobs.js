@@ -28,6 +28,26 @@ import * as THREE from '../node_modules/three/build/three.module.js';
 			isMobile = true;
 		}
 
+		var refractionRatio;
+		function getRefraction(){
+			if(isMobile){
+				refractionRatio = 0.96;
+			}else{
+				refractionRatio = 0.9;
+			}
+			return refractionRatio;
+		}
+
+		var logoImg;
+		function getLogo(){
+			if(isMobile){
+				logoImg = 'nz_s';
+			}else{
+				logoImg = 'nz_white';
+			}
+			return logoImg;
+		}
+
 		init();
 		animate();
 
@@ -46,7 +66,7 @@ import * as THREE from '../node_modules/three/build/three.module.js';
 			scene.background = new THREE.Color( 0xffffff );
 			scene.background = new THREE.CubeTextureLoader()
             .setPath( './cubeMap/cube_' )
-            .load( [ 'px.jpg', 'nx.jpg', 'py.jpg', 'ny.jpg', 'pz.jpg', 'nz_white.jpg' ] );
+            .load( [ 'px.jpg', 'nx.jpg', 'py.jpg', 'ny.jpg', 'pz.jpg', getLogo() + '.jpg' ] );
 
 			// LIGHTS
 
@@ -93,9 +113,9 @@ import * as THREE from '../node_modules/three/build/three.module.js';
 
 			// CONTROLS
 
-			var controls = new OrbitControls( camera, renderer.domElement );
+			/* var controls = new OrbitControls( camera, renderer.domElement );
 			controls.minDistance = 500;
-			controls.maxDistance = 5000;
+			controls.maxDistance = 5000; */
 
 			
 
@@ -125,7 +145,7 @@ import * as THREE from '../node_modules/three/build/three.module.js';
 			var urls = [
 				path + 'px' + format, path + 'nx' + format,
 				path + 'py' + format, path + 'ny' + format,
-				path + 'pz' + format, path + 'nz_white' + format
+				path + 'pz' + format, path + getLogo() + format
 			];
 
 			var cubeTextureLoader = new THREE.CubeTextureLoader();
@@ -147,7 +167,7 @@ import * as THREE from '../node_modules/three/build/three.module.js';
 				}, */
 
 				"liquid": {
-					m: new THREE.MeshLambertMaterial( { color: 0xffffff, envMap: refractionCube, refractionRatio: 0.9 } ),
+					m: new THREE.MeshLambertMaterial( { color: 0xffffff, envMap: refractionCube, refractionRatio: getRefraction() } ),
 					h: 2, s: 0, l: 1
 				},
 
@@ -303,7 +323,7 @@ import * as THREE from '../node_modules/three/build/three.module.js';
 			// marching cubes
 			if(isMobile){
 				resolution = 50;
-				var numBlobs = 8;
+				var numBlobs = 6;
 			}else{
 				resolution = 80;
 				var numBlobs = 15;
