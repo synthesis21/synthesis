@@ -10,6 +10,7 @@
 
 #nonModalWrap{
     transition: filter .1s ease-in-out;
+    margin-top: 100px;
 }
 
 .bioLink{
@@ -29,6 +30,10 @@
 }
 
 #modalBg{
+    display: none;
+    visibility: hidden;
+    opacity: 0.0;
+    transition: visibility .5s ease-in-out, opacity .5s ease-in-out;
     background-color: rgba(100, 100, 100, 0.2);
     position: fixed;
     overflow-y: scroll;
@@ -38,11 +43,7 @@
     left: 0;
     box-sizing: border-box;
     z-index: 10;
-    display: grid;
     place-items: center;
-    visibility: hidden;
-    opacity: 0.0;
-    transition: visibility .5s ease-in-out, opacity .5s ease-in-out;
 }
 
 #bioModal{
@@ -88,6 +89,7 @@
 
 #name{
     margin-top: 0px;
+    margin-bottom: 10px;
     text-align: left;
     text-transform: none;
 }
@@ -108,6 +110,8 @@
     font-style: italic;
     font-size: 8pt;
     text-transform: uppercase;
+    line-height: 2.5;
+    display: inline-block;
 }
 
 .contactLink:hover{

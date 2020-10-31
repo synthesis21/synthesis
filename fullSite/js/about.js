@@ -10,7 +10,13 @@ let modalWrap = document.getElementById('modalBg'),
     descrip = document.getElementById('descrip'),
     photo = document.getElementById('modalPic'),
     vimeo = document.getElementById('vimeo'),
-    insta2Pipe = document.getElementById('insta2Pipe');
+    insta2Pipe = document.getElementById('insta2Pipe'),
+    insta1Pipe = document.getElementById('insta1Pipe');
+
+    setTimeout(()=>{
+        modalWrap.style.display = 'grid';
+    }, 1000);
+
 
 class person {
     constructor(name, insta, insta2, site, photo, vimeo, descrip) {
@@ -36,14 +42,14 @@ let dani = new person('Dani Berman', 'daniberman.dzn', '', 'daniberman.com','dan
 let carly = new person('Carly Blonski', 'carlyblonski.dzn', '', 'carlyblonski.com ','carly1.png', '473391054',
 "Hi! I’m Carly Blonski! I’m in more engineering clubs than any non-engineer should ever be in and I’m super involved in THON. I love exploring historic buildings, architecture, theme parks, and looking at all of the details in their designs. When I’m not doing all of that, or serving at the State College classic, The Corner Room, you can catch me dancing and singing along to throwbacks.");
 
-let ron = new person('Ron Feinberg', 're.fein', '', 'refein.com','ron1.png', '473391054',
+let ron = new person('Ron Feinberg', 're.fein', '', 'refein.com','ron1.png', '473497882',
 "Hello adventurers of the internet! Ron is the name and versatility is the game. Offbeat creative and music head who can't seem to stop picking up new hobbies. I would tell you to try and keep up with my antics, except I'm having a hard time&nbsp;myself.");
 
 let amber = new person('Amber Lai', 'amsterbunny.jpg', 'phattywhale', 'amberglai.com','amber1.png', '473391054',
 "Hey, I'm Amber! I wear a lot of black and dark colours, but deep down inside, I'm wearing really cute socks, and honestly that sums up my whole aesthetic. Traveling, food, and culture are a few of the things that excite me the most, and sharing it with others is what makes me&nbsp;happiest!");
 
 let michaela = new person('Michaela Lucas', 'm_m_lucas', '', 'michaelalucas.com','michaela1.png', '473391054',
-"Michaela hates talking about herself, so she asked her sister to write this. It's okay, people mix us up all the time anyway. When she is not wandering around looking for an interesting shadow to photograph, she can be found reading a good coffee-table book, letting me borrow her c̶o̶o̶l̶ clothes, or watching an A24&nbsp;film.");
+"Michaela hates talking about herself, so she asked her sister to write this. It's okay, people mix us up all the time anyway. When she is not wandering around looking for an interesting shadow to photograph, she can be found reading a good coffee-table book, letting me borrow her <span style='text-decoration: line-through;'>cool</span> clothes, or watching an A24&nbsp;film.");
 
 let cassie = new person('Cassie Luzenski', 'cas.dzn', 'cassieluzenski', 'cassieluzenski.com','cassie1.png', '473391054',
 "Hi! I'm Cassie! I'm a graphic designer, photographer, chronic doodler and enthusiast of the color yellow. Outside of design you can find me curled up under a heated blanket watching my favorite tv show – Peaky Blinders – and eating pancakes (yes even for&nbsp;dinner).");
@@ -72,7 +78,7 @@ let zane = new person('Zane Sommese', 'legoknife', '', 'zanesommese.com','zane1.
 let megan = new person('Megan Tam', 'megtamdesign', '', 'megtam.com','megan1.png', '473391054',
 "Hi, I'm Megan! I find great satisfaction in discovering the back story or concept that a design piece is based on. Other times, I'm probably looping my newest find on Spotify, planning my next getaway, or embracing that I'm the main character. Currently casting supporting roles&nbsp;only.");
 
-let christie = new person('Christie Warren', '', '', 'christiewarren.github.io','christie1.png', '473391054',
+let christie = new person('Christie Warren', '', '', 'christiewarren.github.io','christie1.png', '473929340',
 "Hi there! I'm Christie, and around these parts I've earned the title of 'The One Who Likes to Code' and more prestigiously, 'The One Who Loves That Dancing Otter Video.' In my free time I love rock climbing, biking, and -- let's face it -- talking to my pets like they're&nbsp;humans.");
 
 let emw = new person('Emily Watkins', 'emilywatkins5', '', 'emily-watkins.com','emw1.png', '473391054',
@@ -130,6 +136,8 @@ function openBio(){
                 name.innerHTML = amber.name;
                 instaLink.innerHTML = amber.insta;
                 instaLink.href = amber.instaLink;
+                instaLink2.innerHTML = amber.insta2;
+                instaLink.href = amber.instaLink2;
                 siteLink.innerHTML = amber.site;
                 siteLink.href = amber.siteLink;
                 photo.src = amber.photo;
@@ -271,8 +279,14 @@ function openBio(){
                 vimeo.src = eileen.vimeo;
             break;
           }
+        //add pipes when there are insta values, when no insta, move site link over
           if(instaLink2.innerHTML != ''){
             insta2Pipe.innerHTML = '&nbsp;&nbsp; | &nbsp;&nbsp;';
+          }
+          if(instaLink.innerHTML != ''){
+            insta1Pipe.innerHTML = '&nbsp;&nbsp; | &nbsp;&nbsp;';
+          }else{
+            siteLink.style.marginLeft = '-8px';
           }
           nonModal.style.filter = 'blur(4px)';
           show(modalWrap);
@@ -282,27 +296,33 @@ function openBio(){
 
 openBio();
 
-//when x is clicked close modal
+//when clicked x close modal, unblur background, and remove all values from insta links and pipes
 closeModal.onclick = function(){
     hide(modalWrap);
     nonModal.style.filter = 'blur(0px)';
     setTimeout(function(){
-        instaLink2.innerHTML = '';
+        instaLink.innerHTML = '';
         instaLink.href = '';
+        instaLink2.innerHTML = '';
+        instaLink2.href = '';
         insta2Pipe.innerHTML = '';
-    }, 1000);
+        insta1Pipe.innerHTML = '';
+    }, 600);
 }
 
-//when clicked outside of modal close modal
+//when clicked outside of modal close modal, unblur background, and remove all values from insta links and pipes
 window.onclick = function(event) {
     if (event.target == modalWrap) {
         hide(modalWrap);
         nonModal.style.filter = 'blur(0px)';
         setTimeout(function(){
-            instaLink2.innerHTML = '';
+            instaLink.innerHTML = '';
             instaLink.href = '';
+            instaLink2.innerHTML = '';
+            instaLink2.href = '';
             insta2Pipe.innerHTML = '';
-        }, 1000);
+            insta1Pipe.innerHTML = '';
+        }, 600);
     }
   }
 
