@@ -93,46 +93,47 @@ function openBio(){
           let id = item.id;
           switch (id) {
             case 'abby':
+                photo.src = abby.photo;
                 name.innerHTML = abby.name;
                 instaLink.innerHTML = abby.insta;
                 instaLink.href = abby.instaLink;
                 siteLink.innerHTML = abby.site;
                 siteLink.href = abby.siteLink;
-                photo.src = abby.photo;
                 descrip.innerHTML = abby.descrip;
                 vimeo.src = abby.vimeo;
             break;
             case 'dani':
+                photo.src = dani.photo;
                 name.innerHTML = dani.name;
                 instaLink.innerHTML = dani.insta;
                 instaLink.href = dani.instaLink;
                 siteLink.innerHTML = dani.site;
                 siteLink.href = dani.siteLink;
-                photo.src = dani.photo;
                 descrip.innerHTML = dani.descrip;
                 vimeo.src = dani.vimeo;
                 break;
             case 'carly':
+                photo.src = carly.photo;
                 name.innerHTML = carly.name;
                 instaLink.innerHTML = carly.insta;
                 instaLink.href = carly.instaLink;
                 siteLink.innerHTML = carly.site;
                 siteLink.href = carly.siteLink;
-                photo.src = carly.photo;
                 descrip.innerHTML = carly.descrip;
                 vimeo.src = carly.vimeo;
                 break;
             case 'ron':
+                photo.src = ron.photo;
                 name.innerHTML = ron.name;
                 instaLink.innerHTML = ron.insta;
                 instaLink.href = ron.instaLink;
                 siteLink.innerHTML = ron.site;
                 siteLink.href = ron.siteLink;
-                photo.src = ron.photo;
                 descrip.innerHTML = ron.descrip;
                 vimeo.src = ron.vimeo;
                 break;
             case 'amber':
+                photo.src = amber.photo;
                 name.innerHTML = amber.name;
                 instaLink.innerHTML = amber.insta;
                 instaLink.href = amber.instaLink;
@@ -140,21 +141,21 @@ function openBio(){
                 instaLink.href = amber.instaLink2;
                 siteLink.innerHTML = amber.site;
                 siteLink.href = amber.siteLink;
-                photo.src = amber.photo;
                 descrip.innerHTML = amber.descrip;
                 vimeo.src = amber.vimeo;
                 break;
             case 'michaela':
+                photo.src = michaela.photo;
                 name.innerHTML = michaela.name;
                 instaLink.innerHTML = michaela.insta;
                 instaLink.href = michaela.instaLink;
                 siteLink.innerHTML = michaela.site;
                 siteLink.href = michaela.siteLink;
-                photo.src = michaela.photo;
                 descrip.innerHTML = michaela.descrip;
                 vimeo.src = michaela.vimeo;
                 break;
             case 'cassie':
+                photo.src = cassie.photo;
                 name.innerHTML = cassie.name;
                 instaLink.innerHTML = cassie.insta;
                 instaLink.href = cassie.instaLink;
@@ -162,11 +163,11 @@ function openBio(){
                 instaLink.href = cassie.instaLink2;
                 siteLink.innerHTML = cassie.site;
                 siteLink.href = cassie.siteLink;
-                photo.src = cassie.photo;
                 descrip.innerHTML = cassie.descrip;
                 vimeo.src = cassie.vimeo;
                 break;
             case 'sarah':
+                photo.src = sarah.photo;
                 name.innerHTML = sarah.name;
                 instaLink.innerHTML = sarah.insta;
                 instaLink.href = sarah.instaLink;
@@ -174,11 +175,11 @@ function openBio(){
                 instaLink.href = sarah.instaLink2;
                 siteLink.innerHTML = sarah.site;
                 siteLink.href = sarah.siteLink;
-                photo.src = sarah.photo;
                 descrip.innerHTML = sarah.descrip;
                 vimeo.src = sarah.vimeo;
                 break;
             case 'taylor':
+                photo.src = taylor.photo;
                 name.innerHTML = taylor.name;
                 instaLink.innerHTML = taylor.insta;
                 instaLink.href = taylor.instaLink;
@@ -186,21 +187,21 @@ function openBio(){
                 instaLink.href = taylor.instaLink2;
                 siteLink.innerHTML = taylor.site;
                 siteLink.href = taylor.siteLink;
-                photo.src = taylor.photo;
                 descrip.innerHTML = taylor.descrip;
                 vimeo.src = taylor.vimeo;
                 break;
             case 'tamar':
+                photo.src = tamar.photo;
                 name.innerHTML = tamar.name;
                 instaLink.innerHTML = tamar.insta;
                 instaLink.href = tamar.instaLink;
                 siteLink.innerHTML = tamar.site;
                 siteLink.href = tamar.siteLink;
-                photo.src = tamar.photo;
                 descrip.innerHTML = tamar.descrip;
                 vimeo.src = tamar.vimeo;
                 break;
             case 'emp':
+                photo.src = emp.photo;
                 name.innerHTML = emp.name;
                 instaLink.innerHTML = emp.insta;
                 instaLink.href = emp.instaLink;
@@ -208,73 +209,72 @@ function openBio(){
                 instaLink.href = emp.instaLink2;
                 siteLink.innerHTML = emp.site;
                 siteLink.href = emp.siteLink;
-                photo.src = emp.photo;
                 descrip.innerHTML = emp.descrip;
                 vimeo.src = emp.vimeo;
                 break;
             case 'jackie':
+                photo.src = jackie.photo;
                 name.innerHTML = jackie.name;
                 instaLink.innerHTML = jackie.insta;
                 instaLink.href = jackie.instaLink;
                 siteLink.innerHTML = jackie.site;
                 siteLink.href = jackie.siteLink;
-                photo.src = jackie.photo;
                 descrip.innerHTML = jackie.descrip;
                 vimeo.src = jackie.vimeo;
                 break;
             case 'sam':
+                photo.src = sam.photo;
                 name.innerHTML = sam.name;
                 instaLink.innerHTML = sam.insta;
                 instaLink.href = sam.instaLink;
                 siteLink.innerHTML = sam.site;
                 siteLink.href = sam.siteLink;
-                photo.src = sam.photo;
                 descrip.innerHTML = sam.descrip;
                 vimeo.src = sam.vimeo;
                 break;
             case 'zane':
+                photo.src = zane.photo;
                 name.innerHTML = zane.name;
                 instaLink.innerHTML = zane.insta;
                 instaLink.href = zane.instaLink;
                 siteLink.innerHTML = zane.site;
                 siteLink.href = zane.siteLink;
-                photo.src = zane.photo;
                 descrip.innerHTML = zane.descrip;
                 vimeo.src = zane.vimeo;
                 break;
             case 'megan':
+                photo.src = megan.photo;
                 name.innerHTML = megan.name;
                 instaLink.innerHTML = megan.insta;
                 instaLink.href = megan.instaLink;
                 siteLink.innerHTML = megan.site;
                 siteLink.href = megan.siteLink;
-                photo.src = megan.photo;
                 descrip.innerHTML = megan.descrip;
                 vimeo.src = megan.vimeo;
             break;
             case 'christie':
+                photo.src = christie.photo;
                 name.innerHTML = christie.name;
                 siteLink.innerHTML = christie.site;
                 siteLink.href = christie.siteLink;
-                photo.src = christie.photo;
                 descrip.innerHTML = christie.descrip;
                 vimeo.src = christie.vimeo;
             break;
             case 'emw':
+                photo.src = emw.photo;
                 name.innerHTML = emw.name;
                 instaLink.innerHTML = emw.insta;
                 instaLink.href = emw.instaLink;
                 siteLink.innerHTML = emw.site;
                 siteLink.href = emw.siteLink;
-                photo.src = emw.photo;
                 descrip.innerHTML = emw.descrip;
                 vimeo.src = emw.vimeo;
             break;
             case 'eileen':
+                photo.src = eileen.photo;
                 name.innerHTML = eileen.name;
                 siteLink.innerHTML = eileen.site;
                 siteLink.href = eileen.siteLink;
-                photo.src = eileen.photo;
                 descrip.innerHTML = eileen.descrip;
                 vimeo.src = eileen.vimeo;
             break;

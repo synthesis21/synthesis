@@ -76,7 +76,6 @@
 
 .bioPicWrap{
     width: 25%;
-    height: min-content;
 }
 
 #modalPic{
@@ -179,5 +178,6 @@
 
     #modalPic{
         width: 65%;
+        height: 60%;
     }
 }
