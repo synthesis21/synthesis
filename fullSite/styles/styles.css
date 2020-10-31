@@ -41,6 +41,12 @@ p{
     font-size: 10pt;
 }
 
+.textWrap{
+    width: 60%;
+    margin: auto;
+    margin-bottom: 120px;
+}
+
 /* Navbar --------------------------------------------------------------------------- */
 
 #navWrap{
@@ -240,3 +246,4 @@ p{
         transform: translateY(0px);
     }
 }
+

@@ -47,39 +47,56 @@
 			<a href="./process.html" class="menuLink">Process</a>
 		</span>
 	</span>
-
-	<div id="panoWrap"></div>
-	<div class="textWrap">
-		<h2>Synthesis</h2>
-		<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet</p>
-	</div>
-	<div id="peopleWrap">
-        <a href="#" id='abby'>Abby Blend</a>
-        <a href="#" id='dani'>Dani Berman</a>
-        <a href="#" id='carly'>Carly Blonski</a>
-        <a href="#" id='ron'>Ron Feinberg</a>
-        <a href="#" id='amber'>Amber Lai</a>
-        <a href="#" id='michaela'>Michaela Lucas</a>
-        <a href="#" id='cassie'>Cassie Luzenski</a>
-        <a href="#" id='sarah'>Sarah Martin</a>
-        <a href="#" id='taylor'>Taylor Mazzarella</a>
-        <a href="#" id='tamar'>Tamar Najarian</a>
-        <a href="#" id='emp'>Emily Parker</a>
-        <a href="#" id='jackie'>Jackie Siry</a>
-        <a href="#" id='sam'>Samantha Smith</a>
-        <a href="#" id='zane'>Zane Sommese</a>
-        <a href="#" id='megan'>Megan Tam</a>
-        <a href="#" id='christie'>Christie Warren</a>
-        <a href="#" id='emw'>Emily Watkins</a>
-        <a href="#" id='eileen'>Eileen Yu</a>
+    <div id="nonModalWrap">
+        <div id="groupPhotoWrap"></div>
+        <div class="textWrap">
+            <h2>Synthesis</h2>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet</p>
+        </div>
+        <div id="peopleWrap">
+            <button class="bioLink" id='abby'>Abby Blend</button>
+            <button class="bioLink" id='dani'>Dani Berman</button>
+            <button class="bioLink" id='carly'>Carly Blonski</button>
+            <button class="bioLink" id='ron'>Ron Feinberg</button>
+            <button class="bioLink" id='amber'>Amber Lai</button>
+            <button class="bioLink" id='michaela'>Michaela Lucas</button>
+            <button class="bioLink" id='cassie'>Cassie Luzenski</button>
+            <button class="bioLink" id='sarah'>Sarah Martin</button>
+            <button class="bioLink" id='taylor'>Taylor Mazzarella</button>
+            <button class="bioLink" id='tamar'>Tamar Najarian</button>
+            <button class="bioLink" id='emp'>Emily Parker</button>
+            <button class="bioLink" id='jackie'>Jackie Siry</button>
+            <button class="bioLink" id='sam'>Samantha Smith</button>
+            <button class="bioLink" id='zane'>Zane Sommese</button>
+            <button class="bioLink" id='megan'>Megan Tam</button>
+            <button class="bioLink" id='christie'>Christie Warren</button>
+            <button class="bioLink" id='emw'>Emily Watkins</button>
+            <button class="bioLink" id='eileen'>Eileen Yu</button>
+        </div>
     </div>
     <div id="modalBg">
-        <div id="notifyModal">
+        <div id="bioModal">
             <span id="closeModal">&times;</span>
-            <img src="" alt="" id="modalPic">
+            <span class="bioWrap">
+                <span class="bioPicWrap">
+                    <img src="" alt="" id="modalPic">
+                </span>
+                <span class="bioTextWrap">
+                    <h2 id="name"></h2>
+                    <a href="" id="instaLink" class="contactLink"></a>
+                    <span class="pipe">&nbsp;&nbsp; | &nbsp;&nbsp;</span>
+                    <a href="" id="instaLink2" class="contactLink"></a>
+                    <span id="insta2Pipe" class="pipe"></span>
+                    <a href="" id="siteLink" class="contactLink"></a>
+                    <p id="descrip"></p>
+                </span>
+            </span>
+            <div class="vimeoWrap">
+                <iframe src="" frameborder="0" allow="autoplay; fullscreen" allowfullscreen id="vimeo"></iframe>           
+            </div>
         </div>
     </div>
 	<script src="../js/index.js"></script>
-
+    <script src="../js/about.js"></script>
 </body>
 </html> 
