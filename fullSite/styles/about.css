@@ -1,5 +1,9 @@
 /* Colors --------------------------------------------------------------------------- */
 
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
     --blue: #1752ED;
     --pink: #F5246E;
@@ -8,9 +12,51 @@
     --navy: #051C59;
 }
 
+#groupPhotoWrap{
+    width: 100vw;
+    height: 100vh;
+    background: lightblue;
+    margin-bottom: 120px;
+}
+
+/* image grid --------------------------------------------------------------------------- */
+
+.row {
+    display: flex;
+    padding-bottom: 20px;
+    justify-content: center;
+  }
+  
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+
+.imageWrap {
+    width: 20%;
+    padding: 30px;
+    position: relative;
+
+}
+  
+@media screen and (max-width: 800px) {
+    .column {
+  
+    }
+  }
+  
+@media screen and (max-width: 600px) {
+    .column {
+    
+    }
+  }
+
+
 #nonModalWrap{
     transition: filter .1s ease-in-out;
-    margin-top: 100px;
+    margin-top: 50px;
+    margin-bottom: 200px;
 }
 
 .bioLink{
@@ -23,6 +69,7 @@
     display: block;
     background: none;
     border: none;
+    width: 100%;
 }
 
 .bioLink:hover{
@@ -137,6 +184,50 @@
     width: 100%;
     height: 100%;
 }
+
+/* Image hovers  --------------------------------------------------------------------------- */
+
+.personality{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 30px;
+    opacity: 0;
+    box-sizing: border-box;
+    transition: opacity .2s ease-in-out;
+}
+
+.personality:hover{
+    opacity: 1;
+}
+
+/* Back to Top Button --------------------------------------------------------------------------- */
+
+html {
+    scroll-behavior: smooth;
+}
+
+#myBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 50px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+    max-width: 40px;
+  }
+
+  #myBtn:hover {
+        color: transparent;
+        text-shadow: 0px 0px 2px rgba(0,0,0,1);
+  }
+
 
 @media only screen and (max-width: 720px) {
     #bioModal{

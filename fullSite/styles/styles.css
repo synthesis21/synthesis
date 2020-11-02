@@ -42,9 +42,10 @@ p{
 }
 
 .textWrap{
-    width: 60%;
+    width: 45%;
     margin: auto;
     margin-bottom: 120px;
+    text-align: center;
 }
 
 /* Navbar --------------------------------------------------------------------------- */
@@ -80,6 +81,10 @@ p{
     text-transform: uppercase;
     position: relative;
     transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+.mainLink{
+    z-index: 110;
 }
 
 #logoWrap{
@@ -246,4 +251,17 @@ p{
         transform: translateY(0px);
     }
 }
+
+@media only screen and (max-width: 1070px) {
+    .textWrap{
+        width: 65%;
+    }
+}
+
+@media only screen and (max-width: 690px) {
+    .textWrap{
+        width: 80%;
+    }
+}
+
 
