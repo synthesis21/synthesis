@@ -3,8 +3,17 @@ const navLinks = document.getElementById('navLinks'),
     menu = document.getElementById('menu'),
     menuX = document.getElementById('menuXIcon'),
     navLogo = document.getElementById('navLogo'),
-    menuCircle = document.getElementById('menuCircle');
+    menuCircle = document.getElementById('menuCircle'),
+    navWrap = document.getElementById('navWrap'),
+    loader = document.getElementById('loader');
 
+    window.onload = (event) => {
+        hide(loader);
+      };
+
+    setTimeout(function(){
+        show(navWrap, 'flex');
+    }, 1000)
 
 
 var isMobile = false; //initiate as false
