@@ -5,7 +5,7 @@ let modalWrap = document.getElementById('modalBg'),
     nonModal = document.getElementById('nonModalWrap'),
     name = document.getElementById('name'),
     instaLink = document.getElementById('instaLink'),
-    instaLink2 = document.getElementById('instaLink2'),
+    linkedinLink = document.getElementById('linkedinLink'),
     siteLink = document.getElementById('siteLink'),
     descrip = document.getElementById('descrip'),
     photo = document.getElementById('modalPic'),
@@ -56,12 +56,11 @@ muteBtn.addEventListener('click', ()=>{
 })
 
 class person {
-    constructor(name, insta, insta2, site, photo, vimeo, descrip) {
+    constructor(name, linkedin, insta, site, photo, vimeo, descrip) {
         this.name = name;
         this.insta = '@' + insta;
-        this.insta2 = '@' + insta2;
+        this.linkedin = 'https://www.linkedin.com/in/' + linkedin;
         this.instaLink = 'https://www.instagram.com/' + insta;
-        this.instaLink2 = 'https://www.instagram.com/' + insta2;
         this.siteLink = "https://" + site;
         this.site = site;
         this.photo = "../images/headshots/normalColor/" + photo;
@@ -70,58 +69,58 @@ class person {
     }
 }
 
-let abby = new person('Abby Blend', 'abbyblendart', '', 'abbyblend.com','abby1.png', '473391054',
+let abby = new person('Abby Blend', 'abby-blend-96a363198', 'abbyblendart', 'abbyblend.com','abby1.png', '473391054',
 "Hello, I’m Abby! From UX/UI to branding to photography, I am excited by so many areas of design. I love the feeling when I make a connection that sparks a new concept or stylistic choice. In my free time, I’m either listening to newly-discovered music on repeat or finding reasons to talk about French&nbsp;culture.");
 
-let dani = new person('Dani Berman', 'daniberman.dzn', '', 'daniberman.com','dani1.png', '473925447',
+let dani = new person('Dani Berman', '', 'daniberman.dzn', 'daniberman.com','dani1.png', '473925447',
 "Hello! I’m Dani, a passionate creative who enjoys experimenting, researching, and learning! When I’m not designing you can probably find me creating memories or making some coffee to bring back to my Adobe file. I am constantly fascinated by all of the different ways to communicate visually and am grateful to have found my voice in design. I cannot wait to see what the future&nbsp;holds!");
 
-let carly = new person('Carly Blonski', 'carlyblonski.dzn', '', 'carlyblonski.com ','carly1.png', '473391054',
+let carly = new person('Carly Blonski', 'carly-blonski-a60178130', 'carlyblonski.dzn', 'carlyblonski.com ','carly1.png', '473391054',
 "Hi! I’m Carly Blonski! I’m in more engineering clubs than any non-engineer should ever be in and I’m super involved in THON. I love exploring historic buildings, architecture, theme parks, and looking at all of the details in their designs. When I’m not doing all of that, or serving at the State College classic, The Corner Room, you can catch me dancing and singing along to&nbsp;throwbacks.");
 
-let ron = new person('Ron Feinberg', 're.fein', '', 'refein.com','ron1.png', '473497882',
+let ron = new person('Ron Feinberg', 'ronald-feinberg-094379113', 're.fein', 'refein.com','ron1.png', '473497882',
 "Hello adventurers of the internet! Ron is the name and versatility is the game. Offbeat creative and music head who can’t seem to stop picking up new hobbies. I would tell you to try and keep up with my antics, but I don't want to see you out of&nbsp;breath.");
 
-let amber = new person('Amber Lai', 'amsterbunny.jpg', 'phattywhale', 'amberglai.com','amber1.png', '473544996',
+let amber = new person('Amber Lai', 'amber-lai-233471160', 'amsterbunny.jpg', 'amberglai.com','amber1.png', '473544996',
 "Hey, I'm Amber! I wear a lot of black and dark colours, but deep down inside, I'm wearing really cute socks, and honestly that sums up my whole aesthetic. Traveling, food, and culture are a few of the things that excite me the most, and sharing it with others is what makes me happiest! Being able to make connections between my interests, cultures, and people is probably my greatest inspiration as a&nbsp;designer.");
 
-let michaela = new person('Michaela Lucas', 'm_m_lucas', '', 'michaelalucas.com','michaela1.png', '473535019',
+let michaela = new person('Michaela Lucas', 'michaela-lucas-980371198', 'm_m_lucas', '', 'michaelalucas.com','michaela1.png', '473535019',
 "Michaela dislikes talking about herself, so I will be writing this. Michaela thrives in inventing clever and creative concepts in her designs, much like inventing a narrator to dictate this bio. When she's not watching an A24 film or reading a coffee table book to pull inspiration from, you can find her wandering around looking for an interesting shadow or reflection to&nbsp;photograph.");
 
-let cassie = new person('Cassie Luzenski', 'cas.dzn', 'cassieluzenski', 'cassieluzenski.com','cassie1.png', '473278686',
+let cassie = new person('Cassie Luzenski', 'cassie-luzenski-628a97166', 'cassieluzenski', 'cassieluzenski.com','cassie1.png', '473278686',
 "Hi! I'm Cassie! I'm a graphic designer, photographer, chronic doodler and enthusiast of the color yellow. Outside of design you can find me curled up under a heated blanket watching my favorite tv show – Peaky Blinders – and eating pancakes (yes even for&nbsp;dinner).");
 
-let sarah = new person('Sarah Martin', 'martindesign_', 'marti299', 'sarahmartindesign.com','sarah1.png', '473391054',
+let sarah = new person('Sarah Martin', 'sarah-martin-694079181', 'martindesign_', 'sarahmartindesign.com','sarah1.png', '473391054',
 "Hello friends, I’m Sarah! If I’m not thinking of witty comments to stir the pot a little bit, I’m more than likely thinking of how to create a high end photoshoot on a budget. I’m passionate about supporting real women and breaking unhealthy social norms. My weaknesses include smoothie bowls, fictional stories, cute animals, and mostly interior&nbsp;design.");
 
-let taylor = new person('Taylor Mazzarella', 'tmz.dzn', 'tmazz_', 'taylormazzarella.com','taylor1.png', '473537077',
+let taylor = new person('Taylor Mazzarella', 'taylor-mazzarella-b2391b181', 'tmz.dzn', 'taylormazzarella.com','taylor1.png', '473537077',
 "Hey what's up! I'm Taylor! When I'm not obsessing over typography you can find me listening to obscure true crime&nbsp;podcasts.");
 
-let tamar = new person('Tamar Najarian', 'bytamar_', '', 'tamarnajarian.com','tamar1.png', '473319684',
+let tamar = new person('Tamar Najarian', 'tamar-najarian-7baa31180', 'bytamar_', 'tamarnajarian.com','tamar1.png', '473319684',
 "Hey there, I’m Tamar. I’ll start off by saying I am 100% Armenian which is such a big part of my identity and can be seen throughout my designs. Some of my favorite things include cats, listening to music, and spending time with family and&nbsp;friends.");
 
-let emp = new person('Emily Parker', 'emilylana_dzn', 'emma.jeanbean', 'emilylana.com','emp1.png', '473455302',
+let emp = new person('Emily Parker', 'emilylanaparker', 'emma.jeanbean', 'emilylana.com','emp1.png', '473455302',
 "Hey, I'm Emily Parker! A driven creative interested in packaging, branding & print design. When I'm not staring at an InDesign file, you can usually find me outside - hiking, kayaking, planning photoshoots, or searching for the closest coffee&nbsp;shop.");
 
-let jackie = new person('Jackie Siry', 'artxjac', '', 'jackiesiry.com','jac1.png', '473506125',
+let jackie = new person('Jackie Siry', '', 'artxjac', 'jackiesiry.com','jac1.png', '473506125',
 "Hi, I'm Jackie, a creative trained in design with a strong flair for Visual Arts. I'm not really sure what to say about myself so I'm just going to list some things I like. My favorite song is a toss up between Take Off Your Cool by Outkast (Featuring Norah Jones) or A Fond Farewell by Elliott Smith. My favorite word is 'extravaganza'. My favorite color is a light cool blue, much like the background color of my individual video that you should totally check&nbsp;out!");
 
-let sam = new person('Samantha Smith', 'blueyedblony16', '', 'smsmth.com','sam1.png', '474533790',
+let sam = new person('Samantha Smith', 'samantha-smith-590b2a177', 'blueyedblony16', 'smsmth.com','sam1.png', '474533790',
 "Hey there I'm Sam Smith! No, not the British pop idol (although our resemblance is shocking). Outside of class you can find me slinging bagels at my side-hustle, rewatching The Office, and keeping up with the latest&nbsp;memes!");
 
-let zane = new person('Zane Sommese', 'legoknife', '', 'zanesommese.com','zane1.png', '473391054',
+let zane = new person('Zane Sommese', 'zanesommese', 'legoknife', 'zanesommese.com','zane1.png', '473391054',
 "Hey I'm Zane. I hate talking about myself so I'll make this short. I'm passionate about design and really enjoy photography. I love vintage clothes and sometimes I make a hell of a poster or two in my spare time. Also typography is&nbsp;cool.");
 
-let megan = new person('Megan Tam', 'megtamdesign', '', 'megtam.com','megan1.png', '473391054',
+let megan = new person('Megan Tam', 'megan-tam', 'megtamdesign', 'megtam.com','megan1.png', '473391054',
 "Hi, I'm Megan! I find great satisfaction in discovering the back story or concept that a design piece is based on. Other times, I'm probably looping my newest find on Spotify, planning my next getaway, or embracing that I'm the main character. Currently casting supporting roles&nbsp;only.");
 
-let christie = new person('Christie Warren', '', '', 'christiewarren.github.io','christie1.png', '473929340',
+let christie = new person('Christie Warren', 'christina-warren', '', 'christiewarren.github.io','christie1.png', '473929340',
 "Hi there! I'm Christie, and around these parts I've earned the title of 'The One Who Likes to Code' and more prestigiously, 'The One Who Loves That Dancing Otter Video.' In my free time I love rock climbing, biking, and -- let's face it -- talking to my pets like they're&nbsp;humans.");
 
-let emw = new person('Emily Watkins', 'emilywatkins5', '', 'emily-watkins.com','emw1.png', '473262706',
+let emw = new person('Emily Watkins', 'emily-watkins1', 'emilywatkins5', 'emily-watkins.com','emw1.png', '473262706',
 "Hi, I’m Emily. I believe working with others to solve design problems is the most rewarding part of being a designer. I aim to always be bold in everything I do and make a mark on everyone I meet. When taking a break from design, you can find me around good people listening to good&nbsp;music.");
 
-let eileen = new person('Eileen Yu', '', '', 'eileenyudesign.com','eileen1.png', '475029392',
+let eileen = new person('Eileen Yu', 'eileen-yu-615432155', 'eileenyudesign.com','eileen1.png', '475029392',
 "Hi! I'm Eileen! I love all spicy food, and will not get bored even if I eat hot-pot 10 days in a row. I'm passionate about learning about people and seaking meaning in their stories to broaden my understanding of life and design. Outside of design, you can see me with my guitar or camera, or taking a walk on a sunny&nbsp;day.");
 
 function openBio(){
@@ -132,6 +131,7 @@ function openBio(){
             case 'abby':
                 photo.src = abby.photo;
                 name.innerHTML = abby.name;
+                linkedinLink.href = abby.linkedin;
                 instaLink.innerHTML = abby.insta;
                 instaLink.href = abby.instaLink;
                 siteLink.innerHTML = abby.site;
@@ -142,6 +142,7 @@ function openBio(){
             case 'dani':
                 photo.src = dani.photo;
                 name.innerHTML = dani.name;
+                linkedinLink.href = dani.linkedin;
                 instaLink.innerHTML = dani.insta;
                 instaLink.href = dani.instaLink;
                 siteLink.innerHTML = dani.site;
@@ -152,6 +153,7 @@ function openBio(){
             case 'carly':
                 photo.src = carly.photo;
                 name.innerHTML = carly.name;
+                linkedinLink.href = carly.linkedin;
                 instaLink.innerHTML = carly.insta;
                 instaLink.href = carly.instaLink;
                 siteLink.innerHTML = carly.site;
@@ -162,6 +164,7 @@ function openBio(){
             case 'ron':
                 photo.src = ron.photo;
                 name.innerHTML = ron.name;
+                linkedinLink.href = ron.linkedin;
                 instaLink.innerHTML = ron.insta;
                 instaLink.href = ron.instaLink;
                 siteLink.innerHTML = ron.site;
@@ -172,10 +175,9 @@ function openBio(){
             case 'amber':
                 photo.src = amber.photo;
                 name.innerHTML = amber.name;
+                linkedinLink.href = amber.linkedin;
                 instaLink.innerHTML = amber.insta;
                 instaLink.href = amber.instaLink;
-                instaLink2.innerHTML = amber.insta2;
-                instaLink.href = amber.instaLink2;
                 siteLink.innerHTML = amber.site;
                 siteLink.href = amber.siteLink;
                 descrip.innerHTML = amber.descrip;
@@ -184,6 +186,7 @@ function openBio(){
             case 'michaela':
                 photo.src = michaela.photo;
                 name.innerHTML = michaela.name;
+                linkedinLink.href = michaela.linkedin;
                 instaLink.innerHTML = michaela.insta;
                 instaLink.href = michaela.instaLink;
                 siteLink.innerHTML = michaela.site;
@@ -194,10 +197,9 @@ function openBio(){
             case 'cassie':
                 photo.src = cassie.photo;
                 name.innerHTML = cassie.name;
+                linkedinLink.href = cassie.linkedin;
                 instaLink.innerHTML = cassie.insta;
                 instaLink.href = cassie.instaLink;
-                instaLink2.innerHTML = cassie.insta2;
-                instaLink.href = cassie.instaLink2;
                 siteLink.innerHTML = cassie.site;
                 siteLink.href = cassie.siteLink;
                 descrip.innerHTML = cassie.descrip;
@@ -206,10 +208,9 @@ function openBio(){
             case 'sarah':
                 photo.src = sarah.photo;
                 name.innerHTML = sarah.name;
+                linkedinLink.href = sarah.linkedin;
                 instaLink.innerHTML = sarah.insta;
                 instaLink.href = sarah.instaLink;
-                instaLink2.innerHTML = sarah.insta2;
-                instaLink.href = sarah.instaLink2;
                 siteLink.innerHTML = sarah.site;
                 siteLink.href = sarah.siteLink;
                 descrip.innerHTML = sarah.descrip;
@@ -218,10 +219,9 @@ function openBio(){
             case 'taylor':
                 photo.src = taylor.photo;
                 name.innerHTML = taylor.name;
+                linkedinLink.href = taylor.linkedin;
                 instaLink.innerHTML = taylor.insta;
                 instaLink.href = taylor.instaLink;
-                instaLink2.innerHTML = taylor.insta2;
-                instaLink.href = taylor.instaLink2;
                 siteLink.innerHTML = taylor.site;
                 siteLink.href = taylor.siteLink;
                 descrip.innerHTML = taylor.descrip;
@@ -230,6 +230,7 @@ function openBio(){
             case 'tamar':
                 photo.src = tamar.photo;
                 name.innerHTML = tamar.name;
+                linkedinLink.href = tamar.linkedin;
                 instaLink.innerHTML = tamar.insta;
                 instaLink.href = tamar.instaLink;
                 siteLink.innerHTML = tamar.site;
@@ -240,10 +241,9 @@ function openBio(){
             case 'emp':
                 photo.src = emp.photo;
                 name.innerHTML = emp.name;
+                linkedinLink.href = emp.linkedin;
                 instaLink.innerHTML = emp.insta;
                 instaLink.href = emp.instaLink;
-                instaLink2.innerHTML = emp.insta2;
-                instaLink.href = emp.instaLink2;
                 siteLink.innerHTML = emp.site;
                 siteLink.href = emp.siteLink;
                 descrip.innerHTML = emp.descrip;
@@ -252,6 +252,7 @@ function openBio(){
             case 'jackie':
                 photo.src = jackie.photo;
                 name.innerHTML = jackie.name;
+                linkedinLink.href = jackie.linkedin;
                 instaLink.innerHTML = jackie.insta;
                 instaLink.href = jackie.instaLink;
                 siteLink.innerHTML = jackie.site;
@@ -262,6 +263,7 @@ function openBio(){
             case 'sam':
                 photo.src = sam.photo;
                 name.innerHTML = sam.name;
+                linkedinLink.href = sam.linkedin;
                 instaLink.innerHTML = sam.insta;
                 instaLink.href = sam.instaLink;
                 siteLink.innerHTML = sam.site;
@@ -272,6 +274,7 @@ function openBio(){
             case 'zane':
                 photo.src = zane.photo;
                 name.innerHTML = zane.name;
+                linkedinLink.href = zane.linkedin;
                 instaLink.innerHTML = zane.insta;
                 instaLink.href = zane.instaLink;
                 siteLink.innerHTML = zane.site;
@@ -282,6 +285,7 @@ function openBio(){
             case 'megan':
                 photo.src = megan.photo;
                 name.innerHTML = megan.name;
+                linkedinLink.href = megan.linkedin;
                 instaLink.innerHTML = megan.insta;
                 instaLink.href = megan.instaLink;
                 siteLink.innerHTML = megan.site;
@@ -292,6 +296,7 @@ function openBio(){
             case 'christie':
                 photo.src = christie.photo;
                 name.innerHTML = christie.name;
+                linkedinLink.href = christie.linkedin;
                 siteLink.innerHTML = christie.site;
                 siteLink.href = christie.siteLink;
                 descrip.innerHTML = christie.descrip;
@@ -300,6 +305,7 @@ function openBio(){
             case 'emw':
                 photo.src = emw.photo;
                 name.innerHTML = emw.name;
+                linkedinLink.href = emw.linkedin;
                 instaLink.innerHTML = emw.insta;
                 instaLink.href = emw.instaLink;
                 siteLink.innerHTML = emw.site;
@@ -310,6 +316,7 @@ function openBio(){
             case 'eileen':
                 photo.src = eileen.photo;
                 name.innerHTML = eileen.name;
+                linkedinLink.href = eileen.linkedin;
                 siteLink.innerHTML = eileen.site;
                 siteLink.href = eileen.siteLink;
                 descrip.innerHTML = eileen.descrip;
@@ -317,9 +324,9 @@ function openBio(){
             break;
           }
         //add pipes when there are insta values, when no insta, move site link over
-          if(instaLink2.innerHTML != ''){
+          /* if(instaLink2.innerHTML != ''){
             insta2Pipe.innerHTML = '&nbsp;&nbsp; | &nbsp;&nbsp;';
-          }
+          } */
           if(instaLink.innerHTML != ''){
             insta1Pipe.innerHTML = '&nbsp;&nbsp; | &nbsp;&nbsp;';
           }else{
@@ -340,9 +347,7 @@ closeModal.onclick = function(){
     setTimeout(function(){
         instaLink.innerHTML = '';
         instaLink.href = '';
-        instaLink2.innerHTML = '';
-        instaLink2.href = '';
-        insta2Pipe.innerHTML = '';
+        //insta2Pipe.innerHTML = '';
         insta1Pipe.innerHTML = '';
     }, 600);
 }
@@ -355,9 +360,7 @@ window.onclick = function(event) {
         setTimeout(function(){
             instaLink.innerHTML = '';
             instaLink.href = '';
-            instaLink2.innerHTML = '';
-            instaLink2.href = '';
-            insta2Pipe.innerHTML = '';
+            //insta2Pipe.innerHTML = '';
             insta1Pipe.innerHTML = '';
         }, 600);
     }

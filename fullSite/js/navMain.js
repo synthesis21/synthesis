@@ -11,10 +11,6 @@ const navLinks = document.getElementById('navLinks'),
         hide(loader);
       };
 
-    setTimeout(function(){
-        show(navWrap, 'flex');
-    }, 1000)
-
 
 var isMobile = false; //initiate as false
 // device detection

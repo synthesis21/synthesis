@@ -52,7 +52,7 @@
 	</span>
     <div id="nonModalWrap">
         <div id="groupPhotoWrap">
-            <video src="../videos/group.mov" id='groupVid'></video>
+            <video src="../videos/group.mov" id='groupVid' preload="metadata" poster="../images/exhibition/filmPoster.png"></video>
             <span id="playBtnWrap">
             </span>
             <div class="vidControlsWrap">
@@ -157,7 +157,7 @@
     <!-- Back to Top Button -->
 
     <input type="image" onclick="topFunction()" id="myBtn" alt="backtotop"
-       src="../images/about/backtotop.png" >
+       src="../images/about/backtotop.png">
     <script src="../js/topbutton.js"></script>
 
     <!-- Modals -->
@@ -171,11 +171,15 @@
                 </span>
                 <span class="bioTextWrap">
                     <h2 id="name"></h2>
-                    <a href="" id="instaLink" class="contactLink"></a>
-                    <span id="insta1Pipe" class="pipe"></span>
-                    <a href="" id="instaLink2" class="contactLink"></a>
-                    <span id="insta2Pipe" class="pipe"></span>
                     <a href="" id="siteLink" class="contactLink"></a>
+                    <br>
+                    <span class="instaLinkedInWrap">
+                        <a href="" id="instaLink" class="contactLink"></a>
+                        <span id="insta1Pipe" class="pipe"></span>
+                        <a href="" id="linkedinLink" class="contactLink">
+                            <img src="../images/about/linkedin.png" alt="linkedin" class="linkedin">
+                        </a>
+                    </span>
                     <p id="descrip"></p>
                 </span>
             </span>
