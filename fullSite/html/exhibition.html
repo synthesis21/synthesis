@@ -39,7 +39,10 @@
 	</nav>
 	<span id="menu">
 		<span id="menuHeader">
-			<span id="menuXIcon"></span>
+			<span id="menuXIcon">
+				<span id="xLine1"></span>
+				<span id="xLine2"></span>
+			</span>
 		</span>
 		<span id="menuLinks">
 			<a href="./exhibition.html" class="menuLink">Exhibition</a>
@@ -54,15 +57,28 @@
 		<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet</p>
 	</div>
 	<div id="filmWrap">
-		<div id="gifWrap">
+		<!-- <div id="gifWrap">
 			<img src="../videos/Christi.gif" alt="christie" id='gif'>
-		</div>
-		<!-- <video src="../videos/blobsBigger.mov" id='video'></video> -->
+		</div> -->
 		<span class="playBtnWrap">
 			<button id="playBtn">Play</button>
 		</span>
+		<video src="../videos/film720.mov" id="video" preload="metadata" poster="../images/exhibition/filmPoster.png" controls></video>
 	</div>
-    
+	<!--image grid--> 
+
+	<div class="container">
+		<div class="row">
+		  <div class="col">
+			<img src="../images/process/filler/1.JPG">
+			  <img src="../images/process/filler/7.JPG">
+		  </div>
+		  <div class="col">
+			<img src="../images/process/filler/3.JPG">
+			<img src="../images/process/filler/2.JPG">
+		  </div>
+		</div>
+    <script src="../js/exhibition.js"></script>
 	<script src="../js/navOther.js"></script>
 </body>
 </html> 

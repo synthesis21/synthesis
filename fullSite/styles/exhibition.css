@@ -6,6 +6,10 @@
     --navy: #051C59;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 #panoWrap{
     width: 100vw;
     height: 100vh;
@@ -14,9 +18,10 @@
 }
 
 #filmWrap{
-    height: 80vh;
     margin-bottom: 120px;
     position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 #gifWrap{
@@ -33,11 +38,9 @@
 }
 
 #video{
-    visibility: hidden;
-    position: absolute;
-    left: 0;
-    top: 0;
     z-index: 100;
+    width: 100%;
+    max-width: 1200px;
 }
 
 .playBtnWrap{
@@ -67,3 +70,45 @@
     color: white;
     cursor: pointer;
 }
+
+/* Photo Grid --------------------------------------------------------------------------- */
+
+.container{
+    padding-bottom: 120px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .col {
+    flex: 46%;
+    max-width: 46%;
+    padding: 2%;
+  }
+  
+  .col img {
+    padding-top: 10%;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .col {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }

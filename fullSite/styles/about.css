@@ -12,11 +12,53 @@ html {
     --navy: #051C59;
 }
 
+/* group vid --------------------------------------------------------------------------- */
+
+#playBtnWrap{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.playBtnWrap:hover, .playBtnWrap:focus{
+    opacity: 1;
+}
+
+#playBtn{
+    z-index: 10;
+    font-size: 20px;
+    background: var(--blue);
+    border-radius: 35px;
+    padding: 12px 45px;
+    font-family: "montserrat", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    letter-spacing: 2px;
+    font-size: 12pt;
+    text-transform: uppercase;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
 #groupPhotoWrap{
     width: 100vw;
-    height: 100vh;
-    background: lightblue;
     margin-bottom: 120px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+#groupVid{
+    width: 100%;
+    min-width: 600px;
 }
 
 /* image grid --------------------------------------------------------------------------- */
@@ -103,7 +145,7 @@ html {
     position: relative;
     color: white;
     margin-top: 100px;
-    margin-bottom: 50px;
+    margin-bottom: 120px;
 }
 
 .bioWrap{

@@ -62,7 +62,7 @@ p{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 2vw;
+    padding: 10px 4vw 10px 3vw;
 }
 
 #navLinks{
@@ -94,6 +94,11 @@ p{
 
 #navLogo{
     height: 32px;
+    transition: filter 0.3s ease-in-out;
+}
+
+#navLogo:hover{
+    filter: blur(1px);
 }
 
 .navLink:hover{
@@ -158,10 +163,33 @@ p{
 }
 
 #menuXIcon{
-    width: 20px;
-    height: 20px;
-    background:white;
     cursor: pointer;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 100;
+    position: relative;
+    margin-right: 4vw;
+}
+
+#xLine1{
+    width: 30px;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: white;
+    transform: translateY(-12px) rotate(45deg);
+}
+
+#xLine2{
+    width: 30px;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: white;
+    transform: translateY(-12px) rotate(-45deg);
 }
 
 #menuLinks{

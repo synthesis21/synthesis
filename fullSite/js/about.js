@@ -11,12 +11,24 @@ let modalWrap = document.getElementById('modalBg'),
     photo = document.getElementById('modalPic'),
     vimeo = document.getElementById('vimeo'),
     insta2Pipe = document.getElementById('insta2Pipe'),
-    insta1Pipe = document.getElementById('insta1Pipe');
+    insta1Pipe = document.getElementById('insta1Pipe'),
+    groupVid = document.getElementById('groupVid'),
+    playBtnWrap = document.getElementById('playBtnWrap');
 
     setTimeout(()=>{
         modalWrap.style.display = 'grid';
     }, 1000);
 
+playBtnWrap.addEventListener('click', ()=>{
+    //gif.style.visibility = 'hidden';
+    if(groupVid.paused){
+        groupVid.play();
+        playBtn.innerHTML = "pause";
+    }else{
+        groupVid.pause();
+        playBtn.innerHTML = "play";
+    }
+})
 
 class person {
     constructor(name, insta, insta2, site, photo, vimeo, descrip) {
@@ -36,7 +48,7 @@ class person {
 let abby = new person('Abby Blend', 'abbyblendart', '', 'abbyblend.com','abby1.png', '473391054',
 "Hello, I'm Abby! From UX/UI to branding to photography, I am excited by so many areas of design. In my free time, I'm either listening to newly-discovered music on repeat or finding reasons to talk about French&nbsp;culture.");
 
-let dani = new person('Dani Berman', 'daniberman.dzn', '', 'daniberman.com','dani1.png', '473391054',
+let dani = new person('Dani Berman', 'daniberman.dzn', '', 'daniberman.com','dani1.png', '473925447',
 "Hello! I’m Dani, a passionate creative who enjoys experimenting, researching, and learning! When I’m not designing you can probably find me creating memories or making some coffee to bring back to my Adobe file. I am constantly fascinated by all of the different ways to communicate visually and am grateful to have found my voice in design. I cannot wait to see what the future&nbsp;holds!");
 
 let carly = new person('Carly Blonski', 'carlyblonski.dzn', '', 'carlyblonski.com ','carly1.png', '473391054',
@@ -45,31 +57,31 @@ let carly = new person('Carly Blonski', 'carlyblonski.dzn', '', 'carlyblonski.co
 let ron = new person('Ron Feinberg', 're.fein', '', 'refein.com','ron1.png', '473497882',
 "Hello adventurers of the internet! Ron is the name and versatility is the game. Offbeat creative and music head who can't seem to stop picking up new hobbies. I would tell you to try and keep up with my antics, except I'm having a hard time&nbsp;myself.");
 
-let amber = new person('Amber Lai', 'amsterbunny.jpg', 'phattywhale', 'amberglai.com','amber1.png', '473391054',
+let amber = new person('Amber Lai', 'amsterbunny.jpg', 'phattywhale', 'amberglai.com','amber1.png', '473544996',
 "Hey, I'm Amber! I wear a lot of black and dark colours, but deep down inside, I'm wearing really cute socks, and honestly that sums up my whole aesthetic. Traveling, food, and culture are a few of the things that excite me the most, and sharing it with others is what makes me&nbsp;happiest!");
 
-let michaela = new person('Michaela Lucas', 'm_m_lucas', '', 'michaelalucas.com','michaela1.png', '473391054',
+let michaela = new person('Michaela Lucas', 'm_m_lucas', '', 'michaelalucas.com','michaela1.png', '473535019',
 "Michaela hates talking about herself, so she asked her sister to write this. It's okay, people mix us up all the time anyway. When she is not wandering around looking for an interesting shadow to photograph, she can be found reading a good coffee-table book, letting me borrow her <span style='text-decoration: line-through;'>cool</span> clothes, or watching an A24&nbsp;film.");
 
-let cassie = new person('Cassie Luzenski', 'cas.dzn', 'cassieluzenski', 'cassieluzenski.com','cassie1.png', '473391054',
+let cassie = new person('Cassie Luzenski', 'cas.dzn', 'cassieluzenski', 'cassieluzenski.com','cassie1.png', '473278686',
 "Hi! I'm Cassie! I'm a graphic designer, photographer, chronic doodler and enthusiast of the color yellow. Outside of design you can find me curled up under a heated blanket watching my favorite tv show – Peaky Blinders – and eating pancakes (yes even for&nbsp;dinner).");
 
 let sarah = new person('Sarah Martin', 'martindesign_', 'marti299', 'sarahmartindesign.com','sarah1.png', '473391054',
 "Hello friends, I’m Sarah! If I’m not taking care of these 17 other people like they’re my own children, I’m probably thinking of witty comments to stir the pot a little bit. I’m passionate about supporting real women and breaking unhealthy social norms. My weaknesses include smoothie bowls, fictional stories, cute animals, and interior&nbsp;design.");
 
-let taylor = new person('Taylor Mazzarella', 'tmz.dzn', 'tmazz_', 'taylormazzarella.com','taylor1.png', '473391054',
+let taylor = new person('Taylor Mazzarella', 'tmz.dzn', 'tmazz_', 'taylormazzarella.com','taylor1.png', '473537077',
 "Hey what's up! I'm Taylor! When I'm not obsessing over typography you can find me listening to obscure true crime&nbsp;podcasts.");
 
-let tamar = new person('Tamar Najarian', 'bytamar_', '', 'tamarnajarian.com','tamar1.png', '473391054',
+let tamar = new person('Tamar Najarian', 'bytamar_', '', 'tamarnajarian.com','tamar1.png', '473319684',
 "Hey there, I’m Tamar. I’ll start off by saying I am 100% Armenian which is such a big part of my identity and can be seen throughout my designs. Some of my favorite things include cats, listening to music, and spending time with family and friends. Hope you enjoy the Synthesis&nbsp;experience!");
 
-let emp = new person('Emily Parker', 'emilylana_dzn', 'emma.jeanbean', 'abbyblend.com','emp1.png', '473391054',
+let emp = new person('Emily Parker', 'emilylana_dzn', 'emma.jeanbean', 'abbyblend.com','emp1.png', '473455302',
 "Hey, I'm Emily Parker! A driven Creative interested in packaging, branding & print design. When I'm not staring at an InDesign file, you can usually find me outside - hiking, kayaking, planning photoshoots, or searching for the closest coffee&nbsp;shop.");
 
-let jackie = new person('Jackie Siry', 'artxjac', '', 'jackiesiry.com','jac1.png', '473391054',
+let jackie = new person('Jackie Siry', 'artxjac', '', 'jackiesiry.com','jac1.png', '473506125',
 "Hi, I'm Jackie, a creative trained in design with a strong flair for Visual Arts. I'm not really sure what to say about myself so I'm just going list some things I like. My favorite song is a toss up between Take Off Your Cool by Outkast (Featuring Norah Jones) or A Fond Farewell by Elliott Smith. My favorite word is 'extravaganza'. My favorite color is a light cool blue, much like the background color of my individual video that you should totally check&nbsp;out!");
 
-let sam = new person('Samantha Smith', 'blueyedblony16', '', 'smsmth.com','sam1.png', '473391054',
+let sam = new person('Samantha Smith', 'blueyedblony16', '', 'smsmth.com','sam1.png', '474533790',
 "Hey there I'm Sam Smith! No, not the British pop idol (although our resemblance is shocking). Outside of class you can find me slinging bagels at my side-hustle, rewatching The Office, and keeping up with the latest&nbsp;memes!");
 
 let zane = new person('Zane Sommese', 'legoknife', '', 'zanesommese.com','zane1.png', '473391054',
@@ -81,7 +93,7 @@ let megan = new person('Megan Tam', 'megtamdesign', '', 'megtam.com','megan1.png
 let christie = new person('Christie Warren', '', '', 'christiewarren.github.io','christie1.png', '473929340',
 "Hi there! I'm Christie, and around these parts I've earned the title of 'The One Who Likes to Code' and more prestigiously, 'The One Who Loves That Dancing Otter Video.' In my free time I love rock climbing, biking, and -- let's face it -- talking to my pets like they're&nbsp;humans.");
 
-let emw = new person('Emily Watkins', 'emilywatkins5', '', 'emily-watkins.com','emw1.png', '473391054',
+let emw = new person('Emily Watkins', 'emilywatkins5', '', 'emily-watkins.com','emw1.png', '473262706',
 "Hi everyone, I'm Emily. My friends call me DJ EWAT. Design is basically my entire life, but when I take a break from the design world, you can find me listening to good music with good&nbsp;people.");
 
 let eileen = new person('Eileen Yu', '', '', 'eileenyudesign.com','eileen1.png', '473391054',
