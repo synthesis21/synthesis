@@ -23,42 +23,44 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity: 0;
     cursor: pointer;
 }
 
-.playBtnWrap:hover, .playBtnWrap:focus{
-    opacity: 1;
+.vidControlsWrap{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 25px;
+}
+
+.vidControls{
+    z-index: 10;
+    width: 12vw;
+    cursor: pointer;
+    height: 12vw;
+    max-width: 50px;
+    max-height: 50px;
 }
 
 #playBtn{
-    z-index: 10;
-    font-size: 20px;
-    background: var(--blue);
-    border-radius: 35px;
-    padding: 12px 45px;
-    font-family: "montserrat", sans-serif;
-    font-weight: 600;
-    font-style: italic;
-    letter-spacing: 2px;
-    font-size: 12pt;
-    text-transform: uppercase;
-    border: none;
-    color: white;
-    cursor: pointer;
+}
+#muteBtn{
 }
 
 #groupPhotoWrap{
     width: 100vw;
-    margin-bottom: 120px;
     display: flex;
     justify-content: center;
     position: relative;
+    flex-wrap: wrap;
 }
 
 #groupVid{
     width: 100%;
     min-width: 600px;
+    min-height: 100px;
 }
 
 /* image grid --------------------------------------------------------------------------- */
@@ -82,15 +84,24 @@ html {
 
 }
   
+@media screen and (max-width: 1200px) {
+    .imageWrap {
+        width: 20%;
+        padding: 15px;
+    }
+  }
+
 @media screen and (max-width: 800px) {
-    .column {
-  
+    .imageWrap {
+        width: 25%;
+        padding: 15px;
     }
   }
   
 @media screen and (max-width: 600px) {
-    .column {
-    
+    .imageWrap {
+        width: 25%;
+        padding: 8px;
     }
   }
 
