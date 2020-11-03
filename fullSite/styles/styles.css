@@ -95,6 +95,7 @@ p{
 #navLogo{
     height: 32px;
     transition: filter 0.3s ease-in-out;
+    z-index: 110;
 }
 
 #navLogo:hover{
@@ -157,7 +158,7 @@ p{
     white-space: nowrap;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
     padding: 10px 2vw;
     position: relative;
 }

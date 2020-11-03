@@ -40,13 +40,11 @@ function circleReveal(){
 }
 
 function menuReveal(){
-    navLogo.src = '../images/symbolWhite.png';
     showNav(menu, 'flex');
 }
 
 menuX.addEventListener('click', () => {
     menuCircle.style.height = 20 + 'px';
     menuCircle.style.width = 20 + 'px';
-    navLogo.src = '../images/symbolBlack.png';
     hideNav(menu);
 })
