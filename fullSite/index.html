@@ -5,6 +5,9 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 
+	<!-- JQuery -->
+	<script src="../node_modules/jquery/dist/jquery.min.js"></script>
+
 	<!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
@@ -17,6 +20,7 @@
 	<link rel="stylesheet" href="styles/styles.css">
 	<!-- Page CSS -->
 	<link rel="stylesheet" href="styles/blobs.css">
+
 </head>
 
 <body>
@@ -54,12 +58,16 @@
 		<h3>Experience Our Evolution</h3>
 	</span>
 	<div id="container"></div>
-	<!-- <span id="loader">
+	<div id="loader">
 		<img src="./images/symbolBlack.png" alt="Synthesis logo" id="loadLogo">
 		<h3>Loading...</h3>
-	</span> -->
+	</div>
+	<script>
+		$(window).on("load",function(){
+    		$("#loader").fadeOut("slow");
+		});
+	</script>
 	<script src="js/navMain.js"></script>
 	<script type="module" src="js/blobs.js"></script>
-
 </body>
 </html> 
