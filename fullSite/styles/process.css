@@ -1,3 +1,6 @@
+body{
+  overflow-x: hidden;
+}
 
 /* Slideshow --------------------------------------------------------------------------- */
 
@@ -76,15 +79,6 @@
 }
 
 /* Type --------------------------------------------------------------------------- */
-
-
-.textWrap{
-  width: 45%;
-  margin: auto;
-  margin-bottom: 120px;
-  margin-top: 120px;
-  text-align: center;
-}
 
 h2{
   font-family: "ff-nexus-typewriter", sans-serif;

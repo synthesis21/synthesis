@@ -84,7 +84,7 @@ let ron = new person('Ron Feinberg', 'ronald-feinberg-094379113', 're.fein', 're
 let amber = new person('Amber Lai', 'amber-lai-233471160', 'amsterbunny.jpg', 'amberglai.com','amber1.png', '473544996',
 "Hey, I'm Amber! I wear a lot of black and dark colours, but deep down inside, I'm wearing really cute socks, and honestly that sums up my whole aesthetic. Traveling, food, and culture are a few of the things that excite me the most, and sharing it with others is what makes me happiest! Being able to make connections between my interests, cultures, and people is probably my greatest inspiration as a&nbsp;designer.");
 
-let michaela = new person('Michaela Lucas', 'michaela-lucas-980371198', 'm_m_lucas', '', 'michaelalucas.com','michaela1.png', '473535019',
+let michaela = new person('Michaela Lucas', 'michaela-lucas-980371198', 'm_m_lucas', 'michaelalucas.com','michaela1.png', '473535019',
 "Michaela dislikes talking about herself, so I will be writing this. Michaela thrives in inventing clever and creative concepts in her designs, much like inventing a narrator to dictate this bio. When she's not watching an A24 film or reading a coffee table book to pull inspiration from, you can find her wandering around looking for an interesting shadow or reflection to&nbsp;photograph.");
 
 let cassie = new person('Cassie Luzenski', 'cassie-luzenski-628a97166', 'cassieluzenski', 'cassieluzenski.com','cassie1.png', '473278686',
@@ -94,7 +94,7 @@ let sarah = new person('Sarah Martin', 'sarah-martin-694079181', 'martindesign_'
 "Hello friends, I’m Sarah! If I’m not thinking of witty comments to stir the pot a little bit, I’m more than likely thinking of how to create a high end photoshoot on a budget. I’m passionate about supporting real women and breaking unhealthy social norms. My weaknesses include smoothie bowls, fictional stories, cute animals, and mostly interior&nbsp;design.");
 
 let taylor = new person('Taylor Mazzarella', 'taylor-mazzarella-b2391b181', 'tmz.dzn', 'taylormazzarella.com','taylor1.png', '473537077',
-"Hey what's up! I'm Taylor! When I'm not obsessing over typography you can find me listening to obscure true crime&nbsp;podcasts.");
+"Hey, what’s up? I’m Taylor! I’m dedicated to creating purposeful design that packs a punch, but when I’m not doing that, you can find me rollerblading to an ABBA album (Waterloo of&nbsp;course).");
 
 let tamar = new person('Tamar Najarian', 'tamar-najarian-7baa31180', 'bytamar_', 'tamarnajarian.com','tamar1.png', '473319684',
 "Hey there, I’m Tamar. I’ll start off by saying I am 100% Armenian which is such a big part of my identity and can be seen throughout my designs. Some of my favorite things include cats, listening to music, and spending time with family and&nbsp;friends.");
