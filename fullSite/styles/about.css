@@ -12,10 +12,6 @@ html {
     --navy: #051C59;
 }
 
-body{
-    overflow-x: hidden;
-}
-
 /* group vid --------------------------------------------------------------------------- */
 
 #playBtnWrap{
@@ -62,7 +58,8 @@ body{
 }
 
 #groupVid{
-    width: 100%;
+    width: 100vw;
+    height: 56.25vw;
     min-width: 600px;
     min-height: 100px;
 }
@@ -71,12 +68,12 @@ body{
 
 .row {
     display: flex;
-    padding-bottom: 20px;
+    padding-bottom: 0px;
     justify-content: center;
   }
   
 .column img {
-    margin-top: 8px;
+    margin-top: 0px;
     vertical-align: middle;
     width: 100%;
   }
@@ -86,13 +83,22 @@ body{
     padding: 30px;
     position: relative;
 }
+
+.imageWrap > h3{
+    text-align: center;
+    margin-top: 15px;
+    transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+.imageWrap:hover > h3{
+    color: transparent;
+    text-shadow: 0px 0px 2px rgb(0, 0, 0);
+}
   
-
-
 #nonModalWrap{
     transition: filter .1s ease-in-out;
     margin-top: 50px;
-    margin-bottom: 200px;
+    margin-bottom: 20px;
 }
 
 .bioLink{
@@ -110,6 +116,19 @@ body{
 
 .bioLink:hover{
     color: var(--blue);
+}
+
+.bioLinkMobile{
+    cursor: pointer;
+    font-family: "montserrat", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 10pt;
+    text-transform: uppercase;
+    display: block;
+    background: none;
+    border: none;
+    width: 100%;
 }
 
 #modalBg{
@@ -277,6 +296,7 @@ body{
     .personality{
         padding: 15px;
     }
+
   }
 
 @media screen and (max-width: 800px) {
@@ -367,5 +387,10 @@ html {
     #modalPic{
         width: 65%;
         height: 60%;
+    }
+
+    .imageWrap > h3{
+        text-align: center;
+        font-size: 8pt;
     }
 }

@@ -11,10 +11,12 @@
 body{
     margin: 0px;
     overflow-x: hidden;
+    position: relative;
 }
 
 html{
     box-sizing: border-box!important;
+    overflow-x: hidden;
 }
 
 /* Type --------------------------------------------------------------------------- */
@@ -247,7 +249,7 @@ p{
     width: 100vw;
     height: 100vh;
     background: white;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 2000;
