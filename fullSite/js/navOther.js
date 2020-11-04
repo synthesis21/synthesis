@@ -3,7 +3,12 @@ const navLinks = document.getElementById('navLinks'),
     menu = document.getElementById('menu'),
     menuX = document.getElementById('menuXIcon'),
     navLogo = document.getElementById('navLogo'),
-    menuCircle = document.getElementById('menuCircle');
+    menuCircle = document.getElementById('menuCircle'),
+    loader = document.getElementById('loader');
+
+window.onload = (event) => {
+    hideNav(loader);
+};
 
 var isMobile = false; //initiate as false
 // device detection

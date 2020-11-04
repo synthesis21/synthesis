@@ -1,5 +1,5 @@
 const playBtn = document.getElementById('playBtn'),
-    gif = document.getElementById('gif'),
+    //gif = document.getElementById('gif'),
     video = document.getElementById('video');
 
 var isMobile = false; //initiate as false
@@ -10,7 +10,7 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
 }
 
 if(isMobile){
-    gif.style.visibility = 'hidden';
+    //gif.style.visibility = 'hidden';
     playBtn.addEventListener('click', ()=>{
         //gif.style.visibility = 'hidden';
         video.style.visibility = 'visible';

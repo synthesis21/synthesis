@@ -7,9 +7,9 @@ const navLinks = document.getElementById('navLinks'),
     navWrap = document.getElementById('navWrap'),
     loader = document.getElementById('loader');
 
-    window.onload = (event) => {
-        hide(loader);
-      };
+window.onload = (event) => {
+    hide(loader);
+};
 
 
 var isMobile = false; //initiate as false
