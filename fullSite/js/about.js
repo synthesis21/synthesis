@@ -120,7 +120,7 @@ let jackie = new person('Jackie Siry', '', 'artxjac', 'jackiesiry.com','jac1.png
 let sam = new person('Samantha Smith', 'samantha-smith-590b2a177', 'blueyedblony16', 'smsmth.com','sam1.png', '474533790',
 "Hey there I'm Sam Smith! No, not the British pop idol (although our resemblance is shocking). Outside of class you can find me slinging bagels at my side-hustle, rewatching The Office, and keeping up with the latest&nbsp;memes!");
 
-let zane = new person('Zane Sommese', 'zanesommese', 'legoknife', 'zanesommese.com','zane1.png', '473391054',
+let zane = new person('Zane Sommese', 'zanesommese', 'legoknife', 'zanesommese.com','zane1.png', '474013273',
 "Hey I'm Zane. I hate talking about myself so I'll make this short. I'm passionate about design and really enjoy photography. I love vintage clothes and sometimes I make a hell of a poster or two in my spare time. Also typography is&nbsp;cool.");
 
 let megan = new person('Megan Tam', 'megan-tam', 'megtamdesign', 'megtam.com','megan1.png', '473391054',
