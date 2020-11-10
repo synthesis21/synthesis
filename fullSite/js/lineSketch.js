@@ -31,12 +31,12 @@ function setup(){
        stroke(0);
        let ns = noise(x/300 + start, xOff/80);
        let y = map(ns, -1, 1, 0, 300);
-       vertex(x, y+(50*sin(xOff/20+x/400)+50));  
+       vertex(x, y+(70*sin(xOff/20+x/400)+50));  
      }
      let translateNs = noise(10,transOff/40);
      translate(0,(i)-(map(translateNs,-1,1,0,24)));
      transOff += 0.08;
-     xOff += 0.08;
+     xOff += 0.09;
      yOff += 0.25;
      endShape();
    }
