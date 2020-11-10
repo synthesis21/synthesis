@@ -123,11 +123,11 @@ let sam = new person('Samantha Smith', 'samantha-smith-590b2a177', 'blueyedblony
 let zane = new person('Zane Sommese', 'zanesommese', 'legoknife', 'zanesommese.com','zane1.png', '474013273',
 "Hey I'm Zane. I hate talking about myself so I'll make this short. I'm passionate about design and really enjoy photography. I love vintage clothes and sometimes I make a hell of a poster or two in my spare time. Also typography is&nbsp;cool.");
 
-let megan = new person('Megan Tam', 'megan-tam', 'megtamdesign', 'megtam.com','megan1.png', '473391054',
+let megan = new person('Megan Tam', 'megan-tam', 'megtamdesign', 'megtam.com','megan1.png', '477235278',
 "Hi, I'm Megan! I find great satisfaction in discovering the back story or concept that a design piece is based on. Other times, I'm probably looping my newest find on Spotify, planning my next getaway, or embracing that I'm the main character. Currently casting supporting roles&nbsp;only.");
 
 let christie = new person('Christie Warren', 'christina-warren', '', 'christiewarren.github.io','christie1.png', '473929340',
-"Hi there! I'm Christie, and around these parts I've earned the title of 'The One Who Likes to Code' and more prestigiously, 'The One Who Loves That Dancing Otter Video.' In my free time I love rock climbing, biking, and -- let's face it -- talking to my pets like they're&nbsp;humans.");
+"Hi there! I'm Christie, and around here I've earned the title of 'The One Who Likes to Code' and more prestigiously, 'The One Who Loves That Dancing Otter Video.' Human-centered UI & UX design is the name of my game, and I'm always working to expand my technical skillset. In my free time I love rock climbing, biking, kayaking, and&mdash;let's face it&mdash;talking to my pets like they're&nbsp;humans.");
 
 let emw = new person('Emily Watkins', 'emily-watkins1', 'emilywatkins5', 'emily-watkins.com','emw1.png', '473262706',
 "Hi, I’m Emily. I believe working with others to solve design problems is the most rewarding part of being a designer. I aim to always be bold in everything I do and make a mark on everyone I meet. When taking a break from design, you can find me around good people listening to good&nbsp;music.");
@@ -341,8 +341,6 @@ function openBio(){
           } */
           if(instaLink.innerHTML != ''){
             insta1Pipe.innerHTML = '&nbsp;&nbsp; | &nbsp;&nbsp;';
-          }else{
-            siteLink.style.marginLeft = '-8px';
           }
           nonModal.style.filter = 'blur(4px)';
           show(modalWrap);
