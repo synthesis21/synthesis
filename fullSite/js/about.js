@@ -84,7 +84,7 @@ class person {
 let abby = new person('Abby Blend', 'abby-blend-96a363198', 'abbyblendart', 'abbyblend.com','abby1.png', '473391054',
 "Hello, I’m Abby! From UX/UI to branding to photography, I am excited by so many areas of design. I love the feeling when I make a connection that sparks a new concept or stylistic choice. In my free time, I’m either listening to newly-discovered music on repeat or finding reasons to talk about French&nbsp;culture.");
 
-let dani = new person('Dani Berman', '', 'daniberman.dzn', 'daniberman.com','dani1.png', '473925447',
+let dani = new person('Danielle Berman', '', 'daniberman.dzn', 'daniberman.com','dani1.png', '473925447',
 "Hello! I’m Dani, a passionate creative who enjoys experimenting, researching, and learning! When I’m not designing you can probably find me creating memories or making some coffee to bring back to my Adobe file. I am constantly fascinated by all of the different ways to communicate visually and am grateful to have found my voice in design. I cannot wait to see what the future&nbsp;holds!");
 
 let carly = new person('Carly Blonski', 'carly-blonski-a60178130', 'carlyblonski.dzn', 'carlyblonski.com ','carly1.png', '473391054',

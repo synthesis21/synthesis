@@ -90,7 +90,7 @@ import * as THREE from '../node_modules/three/build/three.module.js';
 			if(isMobile){
 				resolution = 50;
 			}else{
-				resolution = 80;
+				resolution = 75;
 			}
 
 
@@ -326,7 +326,7 @@ import * as THREE from '../node_modules/three/build/three.module.js';
 				var numBlobs = 6;
 			}else{
 				resolution = 80;
-				var numBlobs = 15;
+				var numBlobs = 8;
 			}
 			effect.isolation = 50;
 
