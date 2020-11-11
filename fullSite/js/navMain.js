@@ -37,7 +37,7 @@ if (isMobile){
     show(menuCircle, 'inline-block');
     show(menuIcon, 'flex');
     navLogo.src = './images/logoBlack.png';
-    menuLogo.src = './images/logoWhite.png';
+    menuLogo.src = './images/fullLogoWhite.png';
 }
 
 menuIcon.addEventListener('click', () => {
