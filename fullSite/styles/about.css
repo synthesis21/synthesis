@@ -59,9 +59,10 @@ html {
 
 #groupVid{
     width: 100vw;
-    height: 56.25vw;
+    object-fit: cover;
     min-width: 600px;
     min-height: 100px;
+    max-height: 90vh;
 }
 
 /* image grid --------------------------------------------------------------------------- */
@@ -90,10 +91,7 @@ html {
     transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
 }
 
-.imageWrap:hover > h3{
-    color: transparent;
-    text-shadow: 0px 0px 2px rgb(0, 0, 0);
-}
+
   
 #nonModalWrap{
     transition: filter .1s ease-in-out;
@@ -112,10 +110,6 @@ html {
     background: none;
     border: none;
     width: 100%;
-}
-
-.bioLink:hover{
-    color: var(--blue);
 }
 
 .bioLinkMobile{
@@ -284,9 +278,7 @@ html {
     transition: opacity .2s ease-in-out;
 }
 
-.personality:hover{
-    opacity: 1;
-}
+
 
 @media screen and (max-width: 1200px) {
     .imageWrap {
@@ -340,9 +332,23 @@ html {
     max-width: 40px;
   }
 
-  #myBtn:hover {
+  
+
+  @media (hover: hover) and (pointer: fine) {
+    #myBtn:hover {
         color: transparent;
         text-shadow: 0px 0px 2px rgba(0,0,0,1);
+    }
+
+    .imageWrap:hover > h3{
+        color: transparent;
+        text-shadow: 0px 0px 2px rgb(0, 0, 0);
+    }
+
+    .personality:hover{
+        opacity: 1;
+    }
+
   }
 
 

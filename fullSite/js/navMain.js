@@ -3,6 +3,7 @@ const navLinks = document.getElementById('navLinks'),
     menu = document.getElementById('menu'),
     menuX = document.getElementById('menuXIcon'),
     navLogo = document.getElementById('navLogo'),
+    menuLogo = document.getElementById('menuLogo'),
     menuCircle = document.getElementById('menuCircle'),
     navWrap = document.getElementById('navWrap'),
     loader = document.getElementById('loader');
@@ -35,6 +36,8 @@ if (isMobile){
     hide(navLinks);
     show(menuCircle, 'inline-block');
     show(menuIcon, 'flex');
+    navLogo.src = './images/logoBlack.png';
+    menuLogo.src = './images/logoWhite.png';
 }
 
 menuIcon.addEventListener('click', () => {

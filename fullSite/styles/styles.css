@@ -100,7 +100,17 @@ p{
     z-index: 110;
 }
 
+#menuLogo{
+    height: 32px;
+    transition: filter 0.3s ease-in-out;
+    z-index: 110;
+}
+
 #navLogo:hover{
+    filter: blur(1px);
+}
+
+#menuLogo:hover{
     filter: blur(1px);
 }
 
