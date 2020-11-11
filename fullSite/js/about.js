@@ -13,8 +13,8 @@ let modalWrap = document.getElementById('modalBg'),
     insta2Pipe = document.getElementById('insta2Pipe'),
     insta1Pipe = document.getElementById('insta1Pipe'),
     groupVid = document.getElementById('groupVid'),
-    playBtnWrap = document.getElementById('playBtnWrap'),
-    muteBtnWrap = document.getElementById('muteBtnWrap'),
+    //playBtnWrap = document.getElementById('playBtnWrap'),
+    //muteBtnWrap = document.getElementById('muteBtnWrap'),
     mobileProfiles = document.querySelectorAll('#bw'),
     mobilePersonalities = document.querySelectorAll('.personality');;
 
@@ -33,7 +33,7 @@ let modalWrap = document.getElementById('modalBg'),
     }
 }) */
 
-playBtn.addEventListener('click', ()=>{
+/* playBtn.addEventListener('click', ()=>{
     //gif.style.visibility = 'hidden';
     if(groupVid.paused){
         groupVid.play();
@@ -42,7 +42,7 @@ playBtn.addEventListener('click', ()=>{
         groupVid.pause();
         playBtn.src = "../images/about/play.png";
     }
-})
+}) */
 
 /* muteBtn.addEventListener('click', ()=>{
     //gif.style.visibility = 'hidden';
@@ -353,6 +353,7 @@ openBio();
 //when clicked x close modal, unblur background, and remove all values from insta links and pipes
 closeModal.onclick = function(){
     hide(modalWrap);
+    vimeo.src = '';
     nonModal.style.filter = 'blur(0px)';
     setTimeout(function(){
         instaLink.innerHTML = '';
@@ -366,6 +367,7 @@ closeModal.onclick = function(){
 window.onclick = function(event) {
     if (event.target == modalWrap) {
         hide(modalWrap);
+        vimeo.src = '';
         nonModal.style.filter = 'blur(0px)';
         setTimeout(function(){
             instaLink.innerHTML = '';
