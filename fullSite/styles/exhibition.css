@@ -16,7 +16,6 @@ body{
 #panoWrap{
     width: 100vw;
     height: 92vh;
-    background: lightblue;
     margin-top: 50px;
     margin-bottom: 120px;
     display: grid;

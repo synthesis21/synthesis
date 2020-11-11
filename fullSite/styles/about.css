@@ -381,6 +381,10 @@ html {
         width: 50%;
         margin: auto;
     }
+
+    #groupVid{
+        max-height: 75vh;
+    }
 }
 
 @media only screen and (max-width: 500px) {
