@@ -44,11 +44,6 @@ html {
     max-height: 50px;
 }
 
-#playBtn{
-}
-#muteBtn{
-}
-
 #groupPhotoWrap{
     width: 100vw;
     display: flex;
@@ -96,7 +91,7 @@ html {
   
 #nonModalWrap{
     transition: filter .1s ease-in-out;
-    margin-top: 50px;
+    margin-top: 52px;
     margin-bottom: 20px;
 }
 

@@ -28,11 +28,10 @@ body{
 }
 
 #filmWrap{
-    margin-bottom: 120px;
+    margin-bottom: 80px;
     position: relative;
-    display: flex;
     justify-content: center;
-    margin-top: 40px;
+    margin-top: 52px;
 }
 
 #gifWrap{
@@ -48,19 +47,9 @@ body{
     object-position: center;
 }
 
-.vimeoFilmWrap {
-  position: relative;
-  padding-bottom: 56.25%; /* 16:9 */
-  height: 0;
-  display: flex;
-  align-items: flex-start;
-}
-
 #video{
-    z-index: 100;
     width: 100%;
-    margin-top: -8px;
-    margin-bottom: -30px;
+    height: 56.25vw;
 }
 
 .playBtnWrap{
