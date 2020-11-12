@@ -48,6 +48,7 @@ p{
     margin: auto;
     margin-bottom: 80px;
     text-align: center;
+    padding-top: 80px;
 }
 
 /* Navbar --------------------------------------------------------------------------- */
@@ -252,6 +253,42 @@ p{
 
     transition: width .25s ease-in-out, height .25s ease-in-out, transform .25s ease-in-out;
 }
+
+/* Back to Top Button --------------------------------------------------------------------------- */
+
+html {
+    scroll-behavior: smooth;
+}
+
+#upBtn, #downBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 50px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 15px;
+    max-width: 40px;
+    display: none;
+    transition: filter .2s ease-in-out;
+  }
+
+  #downBtn{
+      display: block;
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    #upBtn:hover {
+        filter: blur(2px);
+    }
+
+    #downBtn:hover {
+        filter: blur(2px);
+    }
+
+  }
+
 
 /* Loading Screen  --------------------------------------------------------------------------- */
 

@@ -28,20 +28,14 @@ import * as THREE from '../node_modules/three/build/three.module.js';
 			isMobile = true;
 		}
 
-		let isSmall = false;
+		//let isSmall = false;
 
-		function getWindowWidth() {
-			if(window.innerWidth <= 820){
-				isSmall = true;
-			}
-			generateMaterials();
-		}
-		  
-		window.onresize = getWindowWidth;
+
+		//window.addEventListener('resize', generateMaterials);
 
 		var refractionRatio;
 		function getRefraction(){
-			if(isMobile || isSmall){
+			if(isMobile || window.innerWidth <= 820){
 				refractionRatio = 0.96;
 			}else{
 				refractionRatio = 0.9;
@@ -51,7 +45,7 @@ import * as THREE from '../node_modules/three/build/three.module.js';
 
 		var logoImg;
 		function getLogo(){
-			if(isMobile || isSmall){
+			if(isMobile || window.innerWidth <= 820){
 				logoImg = 'nz_s';
 			}else{
 				logoImg = 'nz_white';
@@ -93,7 +87,6 @@ import * as THREE from '../node_modules/three/build/three.module.js';
 			scene.add( ambientLight );
 
 			// MATERIALS
-
 			materials = generateMaterials();
 			current_material = "liquid";
 
@@ -169,7 +162,7 @@ import * as THREE from '../node_modules/three/build/three.module.js';
 			return materials;
 
 		}
-
+/* 
 		function createShaderMaterial( shader, light, ambientLight ) {
 
 			var u = THREE.UniformsUtils.clone( shader.uniforms );
@@ -186,7 +179,7 @@ import * as THREE from '../node_modules/three/build/three.module.js';
 
 			return material;
 
-		}
+		} */
 
 		//
 

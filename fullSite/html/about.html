@@ -65,7 +65,7 @@
                  <img src="../images/about/unmute.png" alt="mute/unmute video" id="muteBtn" class="vidControls">
             </div> -->
         </div>
-        <div class="textWrap">
+        <div class="textWrap" id="text">
             <h2>About Us</h2>
             <p>Graduating amidst a global pandemic has challenged us all as designers, but with that, it has strengthened us to face challenges head on. At the beginning of the year we were given a brief to substitute our traditional internship experience with a show that addressed our growth as designers.  There were a lot of new and unfamiliar decisions that we had to make, but we came together as a class and pushed ourselves beyond our own&nbsp;expectations. 
             <br><br>One aspect we felt was essential to our show was highlighting the members of our class both as a group of thriving designers, as well as talented individuals. Here you can find information about each of us, including our sites, social, and personal videos addressing: what inspires us as designers, what design means to us, and what will stick with us after we&nbsp;graduate.              
@@ -182,10 +182,8 @@
     </div>
 
     <!-- Back to Top Button -->
-
-    <input type="image" onclick="topFunction()" id="myBtn" alt="backtotop"
-       src="../images/about/backtotop.png">
-    <script src="../js/topbutton.js"></script>
+    <input type="image" onclick="scrollToTop()" id="upBtn" alt="scroll up" src="../images/up.png">
+    <input type="image" onclick="scrollToText()" id="downBtn" alt="scroll down" src="../images/down.png">
 
     <!-- Modals -->
 
@@ -219,7 +217,7 @@
 		<img src="../images/symbolBlack.png" alt="Synthesis logo" id="loadLogo">
 		<h3>Loading...</h3>
     </div>
-    <script src="../js/topbutton.js"></script>
+    <script src="../js/scrollBtns.js"></script>
     <script src="../js/navOther.js"></script>
     <script src="../js/about.js"></script>
     <script src="../js/lineSketch.js"></script>
