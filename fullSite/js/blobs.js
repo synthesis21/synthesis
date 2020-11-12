@@ -28,9 +28,20 @@ import * as THREE from '../node_modules/three/build/three.module.js';
 			isMobile = true;
 		}
 
+		let isSmall = false;
+
+		function getWindowWidth() {
+			if(window.innerWidth <= 820){
+				isSmall = true;
+			}
+			generateMaterials();
+		}
+		  
+		window.onresize = getWindowWidth;
+
 		var refractionRatio;
 		function getRefraction(){
-			if(isMobile){
+			if(isMobile || isSmall){
 				refractionRatio = 0.96;
 			}else{
 				refractionRatio = 0.9;
@@ -40,7 +51,7 @@ import * as THREE from '../node_modules/three/build/three.module.js';
 
 		var logoImg;
 		function getLogo(){
-			if(isMobile){
+			if(isMobile || isSmall){
 				logoImg = 'nz_s';
 			}else{
 				logoImg = 'nz_white';
