@@ -5,7 +5,7 @@ function windowResized(){
 function setup(){
     createCanvas(windowWidth,350);
     background(255);
-    strokeWeight(1);
+    strokeWeight(0.5);
     noFill();
   }
   
@@ -17,7 +17,7 @@ function setup(){
   function draw(){
     
    background(255);
-   let numLines = 8;
+   let numLines = 20;
    let start = 0;
    let amp = 100;
    let period = 150;
@@ -31,12 +31,13 @@ function setup(){
        stroke(0);
        let ns = noise(x/300 + start, xOff/80);
        let y = map(ns, -1, 1, 0, 300);
+       //vertex(x, y+(250*sin(xOff/20+x/400)+250)); 
        vertex(x, y+(70*sin(xOff/20+x/400)+50));  
      }
      let translateNs = noise(10,transOff/40);
      translate(0,(i)-(map(translateNs,-1,1,0,24)));
-     transOff += 0.08;
-     xOff += 0.09;
+     transOff += 0.03;
+     xOff += 0.03;
      yOff += 0.25;
      endShape();
    }
