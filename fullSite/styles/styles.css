@@ -44,6 +44,7 @@ p{
     font-weight: 300;
     font-size: 10pt;
     line-height: 1.5;
+    text-align: left;
 }
 
 .textWrap{
@@ -52,6 +53,10 @@ p{
     margin-bottom: 80px;
     text-align: center;
     padding-top: 80px;
+}
+
+.textWrap > p{
+    padding-left: 2vw;
 }
 
 /* Navbar --------------------------------------------------------------------------- */

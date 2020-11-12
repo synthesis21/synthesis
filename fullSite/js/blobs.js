@@ -100,7 +100,7 @@ import * as THREE from '../node_modules/three/build/three.module.js';
 			if(isMobile){
 				resolution = 50;
 			}else{
-				resolution = 60;
+				resolution = 65;
 			}
 
 			effect = new MarchingCubes( resolution, materials[ current_material ].m, true, true );
@@ -264,7 +264,7 @@ import * as THREE from '../node_modules/three/build/three.module.js';
 				resolution = 50;
 				var numBlobs = 6;
 			}else{
-				resolution = 60;
+				resolution = 65;
 				var numBlobs = 8;
 			}
 			effect.isolation = 50;

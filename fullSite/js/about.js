@@ -369,9 +369,9 @@ window.onclick = function(event) {
     if (event.target == modalWrap) {
         hide(modalWrap);
         vimeo.src = '';
-        photo.src = '';
         nonModal.style.filter = 'blur(0px)';
         setTimeout(function(){
+            photo.src = '';
             instaLink.innerHTML = '';
             instaLink.href = '';
             //insta2Pipe.innerHTML = '';
