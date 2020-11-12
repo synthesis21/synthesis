@@ -265,7 +265,7 @@ html {
 
 #upBtn, #downBtn, #panoDown {
     position: fixed;
-    bottom: 20px;
+    bottom: 50px;
     right: 50px;
     z-index: 99;
     border: none;
