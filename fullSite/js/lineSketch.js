@@ -7,20 +7,16 @@ function setup(){
     background(255);
     strokeWeight(0.5);
     noFill();
-  }
+}
   
   let xOff = 0.01;
-  let yOff = 0.01;
   let transOff = 0.01;
-  let numFrames = 250;
 
   function draw(){
     
    background(255);
-   let numLines = 20;
+   let numLines = 16;
    let start = 0;
-   let amp = 100;
-   let period = 150;
    noiseDetail(1, 0.9);
   
   for(let i = 1; i <= numLines; i++){
@@ -38,7 +34,6 @@ function setup(){
      translate(0,(i)-(map(translateNs,-1,1,0,24)));
      transOff += 0.03;
      xOff += 0.03;
-     yOff += 0.25;
      endShape();
    }
-  }
+}
