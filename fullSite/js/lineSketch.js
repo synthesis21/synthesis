@@ -32,8 +32,8 @@ function setup(){
      }
      let translateNs = noise(10,transOff/40);
      translate(0,(i)-(map(translateNs,-1,1,0,24)));
-     transOff += 0.03;
-     xOff += 0.03;
+     transOff += 0.08;
+     xOff += 0.08;
      endShape();
    }
 }

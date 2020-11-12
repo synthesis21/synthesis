@@ -12,11 +12,13 @@ body{
     margin: 0px;
     overflow-x: hidden;
     position: relative;
+    padding-bottom: 50px;
 }
 
 html{
     box-sizing: border-box!important;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 /* Type --------------------------------------------------------------------------- */
@@ -41,6 +43,7 @@ p{
     font-family: "rubik", sans-serif;
     font-weight: 300;
     font-size: 10pt;
+    line-height: 1.5;
 }
 
 .textWrap{
