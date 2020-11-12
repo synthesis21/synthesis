@@ -27,5 +27,5 @@ if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine
 }
 
 if(isMobile){
-  upBtn.style.display = "none";
+  downBtn.style.display = "none";
 }
