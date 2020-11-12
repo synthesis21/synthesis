@@ -32,8 +32,10 @@ import * as THREE from '../node_modules/three/build/three.module.js';
 
 
 		//window.addEventListener('resize', generateMaterials);
-
 		var refractionRatio;
+		var logoImg;
+
+//Decrease refraction on mobile and smaller screens. 
 		function getRefraction(){
 			if(isMobile || window.innerWidth <= 820){
 				refractionRatio = 0.96;
@@ -43,7 +45,7 @@ import * as THREE from '../node_modules/three/build/three.module.js';
 			return refractionRatio;
 		}
 
-		var logoImg;
+//If mobile or small screen, use the S logo. Otherwise, use full word logo.
 		function getLogo(){
 			if(isMobile || window.innerWidth <= 820){
 				logoImg = 'nz_s';
@@ -52,6 +54,10 @@ import * as THREE from '../node_modules/three/build/three.module.js';
 			}
 			return logoImg;
 		}
+
+		//window.onresize = () => {init(generateMaterials(), getRefraction())}
+
+		//window.onresize = () => {init();}
 
 		init();
 		animate();
@@ -303,3 +309,4 @@ import * as THREE from '../node_modules/three/build/three.module.js';
 			renderer.render( scene, camera );
 
 		}
+

@@ -263,7 +263,7 @@ html {
     scroll-behavior: smooth;
 }
 
-#upBtn, #downBtn {
+#upBtn, #downBtn, #panoDown {
     position: fixed;
     bottom: 20px;
     right: 50px;
@@ -275,6 +275,10 @@ html {
     max-width: 40px;
     display: none;
     transition: filter .2s ease-in-out;
+  }
+
+  #panoDown{
+    left: 50px;
   }
 
   #downBtn{
