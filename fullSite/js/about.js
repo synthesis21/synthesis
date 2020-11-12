@@ -354,6 +354,7 @@ openBio();
 closeModal.onclick = function(){
     hide(modalWrap);
     vimeo.src = '';
+    photo.src = '';
     nonModal.style.filter = 'blur(0px)';
     setTimeout(function(){
         instaLink.innerHTML = '';
@@ -368,6 +369,7 @@ window.onclick = function(event) {
     if (event.target == modalWrap) {
         hide(modalWrap);
         vimeo.src = '';
+        photo.src = '';
         nonModal.style.filter = 'blur(0px)';
         setTimeout(function(){
             instaLink.innerHTML = '';

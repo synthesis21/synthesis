@@ -15,7 +15,7 @@ function setup(){
   function draw(){
     
    background(255);
-   let numLines = 16;
+   let numLines = 8;
    let start = 0;
    noiseDetail(1, 0.9);
   
