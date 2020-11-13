@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "p5": "^1.1.9",
     "three": "^0.122.0"
   }
 }
