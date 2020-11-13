@@ -1,5 +1,7 @@
-import * as THREE from '../node_modules/three/build/three.module.js';
-import { MarchingCubes } from '../node_modules/three/examples/jsm/objects/MarchingCubes.js';
+//import * as THREE from '../node_modules/three/build/three.module.js';
+//import { MarchingCubes } from '../node_modules/three/examples/jsm/objects/MarchingCubes.js';
+import * as THREE from '../threejs/node_modules/three/build/three.module.js';
+import { MarchingCubes } from '../threejs/node_modules/three/examples/jsm/objects/MarchingCubes.js';
 
 const nav = document.getElementById("navWrap");
 const navHeight = nav.offsetHeight;
