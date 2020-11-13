@@ -114,7 +114,7 @@ let tamar = new person('Tamar Najarian', 'tamar-najarian-7baa31180', 'bytamar_',
 let emp = new person('Emily Parker', 'emilylanaparker', 'emma.jeanbean', 'emilylana.com','emp1.png', '473455302',
 "Hey, I'm Emily Parker! A driven creative interested in packaging, branding & print design. When I'm not staring at an InDesign file, you can usually find me outside - hiking, kayaking, planning photoshoots, or searching for the closest coffee&nbsp;shop.");
 
-let jackie = new person('Jackie Siry', '', 'artxjac', 'jackiesiry.com','jac1.png', '478232627',
+let jackie = new person('Jackie Siry', 'jacqueline-siry-142a5519b', 'artxjac', 'jackiesiry.com','jac1.png', '478232627',
 "Hi, I'm Jackie, a creative trained in design with a strong flair for Visual Arts. I'm not really sure what to say about myself so I'm just going to list some things I like. My favorite song is a toss up between Take Off Your Cool by Outkast (Featuring Norah Jones) or A Fond Farewell by Elliott Smith. My favorite word is 'extravaganza'. My favorite color is a light cool blue, much like the background color of my individual video that you should totally check&nbsp;out!");
 
 let sam = new person('Samantha Smith', 'samantha-smith-590b2a177', 'blueyedblony16', 'smsmth.com','sam1.png', '474533790',
