@@ -1,198 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Synthesis</title>
-    <!-- Adobe Fonts -->
-    <style>
-        @import url("https://use.typekit.net/tar1mph.css");
-        @import url("https://use.typekit.net/hkf6iru.css");
-        @import url("https://use.typekit.net/mye4fmb.css");
-    </style>
-<!--     <link rel="stylesheet" href="https://use.typekit.net/mua4zpm.css">-->   
-<!-- Flickity -->
-<link rel="stylesheet" href="landingPage/flickity/flickity.css" media="screen">
-<!-- CSS -->
-    <link rel="stylesheet" href="landingPage/styles.css">
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+	<title>Synthesis</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+	<!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+
+	<!-- Adobe Fonts -->
+	<link rel="stylesheet" href="https://use.typekit.net/mua4zpm.css">
+	<!-- Whole Site CSS -->
+	<link rel="stylesheet" href="styles/styles.css">
+	<!-- Page CSS -->
+	<link rel="stylesheet" href="styles/blobs.css">
+
 </head>
-<body>
-    <div id="main">
-        <div id="enterScreen">
-            <button id="enterBtn">ENTER</button>
-        </div>
-        <video playsinline muted autoplay loop id="loopVid">
-            <source src="landingPage/Landing_Loop.mp4" type="video/mp4" id="loopSrc" poster="/landingPage/loopPoster.png">
-        </video>
-        <video playsinline muted id="introVid" poster="/landingPage/loopPoster.png">
-            <source src="landingPage/Landing_Intro.mp4" type="video/mp4">
-        </video>
-        <div class="socialRow"> 
-            <span class="navWrap">
-                <a href="#main" class="navLink main">Main</a>
-                <a href="#about" class="navLink about">About</a>
-                <a href="#process" class="navLink process">Process</a>
-            </span>
-            <span class="socialWrap">
-                <a id="instaBtn" href="https://www.instagram.com/pennstategraphicdesign/">
-                    <img src="landingPage/instaLogo.png" alt="Instagram">
-                </a>
-                <!-- <button id="fbBtn">
-                    <img src="landingPage/fbLogo.png" alt="Facebook">
-                </button> -->
-            </span>
-        </div>
-        <div class="countdownRow">
-            <div class="countdownWrap">
-                <h2 id="countdown">
-                    <span id="days">
-                        <h2>
-                            <span id="dayCount"><!-- daysLeft --></span>
-                        </h2>
-                        <p class="timeLabel">Days</p>
-                    </span>
-                    <span class="colon">:</span>
-                    <span id="hours">
-                        <h2>
-                            <span id="hourCount"><!-- hoursLeft --></span>
-                        </h2>
-                        <p class="timeLabel">Hours</p>
-                    </span>
-                    <span class="colon">:</span>
-                    <span id="mins">
-                        <h2>
-                            <span id="minCount"><!-- minsLeft --></span>
-                        </h2>
-                        <p class="timeLabel">Minutes</p>
-                    </span>
-                    <span class="colon">:</span>
-                    <span id="secs">
-                        <h2>
-                            <span id="secCount"><!-- secsLeft --></span>
-                        </h2>
-                        <p class="timeLabel">Seconds</p>
-                    </span>
-                </h2>
-            </div>
-        </div>
-        <div class="notifyRow">
-            <button id="notifyBtn">
-                Notify Me
-            </button>
-        </div>
-    </div>
-    <div id="about">
-        <div class="aboutBg"></div>
-        <div class="aboutTitleRow">
-            <h2>Who. What.</h2>
-            <h3>Experience Our Evolution</h3>
-        </div>
-        <div class="aboutBodyRow">
-            <p>We are Penn State’s Graphic Design class of 2021, and as our college careers are coming to an end, we are preparing for our senior showcase, Synthesis. The goal behind our showcase is to reflect on how we have grown as a class and discovered our individuality as designers. Our theme comes from comparing our time of growth in college to evolutionary biology, and is stylistically influenced by the structured form of&nbsp;mathematics.
-            <br><br>
-            Traditionally, our showcase would be held in person, but in light of COVID-19, we have decided to create an entirely virtual, web-based experience. This will include a virtual exhibition, along with some short films and information about us as both a class, and as individual&nbsp;designers.
-            <br><br>
-            We are so excited for what is to come and hope to see you there! Sign up to receive a link when our full website and exhibition are up and <a href="https://www.instagram.com/pennstategraphicdesign/" class="instaLink">follow us</a> on Instagram for updates and behind the&nbsp;scenes!</p>
-        </div>
-    </div>
-    <div id="process">
-        <div class="processTitleRow">
-            <h2>Process</h2>
-            <h3>THE MAKING OF SYNTHESIS</h3>
-        </div>
-        <div class="videoRow">
-            <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }' id="flickityCarousel">
-                <div class="gallery-cell">
-                    <video class="processVid" controls  poster="landingPage/processVids/posters/week4-08.png" preload="metadata">
-                        <source src="landingPage/processVids/Week4_Web.mp4" type="video/mp4">
-                    </video>  
-                </div>
-                <div class="gallery-cell">
-                    <video class="processVid" controls  poster="landingPage/processVids/posters/week3-07.png" preload="metadata">
-                        <source src="landingPage/processVids/WEEK3.mp4" type="video/mp4">
-                    </video>  
-                </div>
-                <div class="gallery-cell">
-                    <video class="processVid" controls  poster="landingPage/processVids/posters/week2-06.png" preload="metadata">
-                        <source src="landingPage/processVids/WEEK2.mp4" type="video/mp4">
-                    </video>  
-                </div>
-                <div class="gallery-cell">
-                    <video class="processVid" controls  poster="landingPage/processVids/posters/brandingPoster-05.png" preload="metadata">
-                        <source src="landingPage/processVids/FINALBRANDING SMALL.mp4" type="video/mp4">
-                    </video>  
-                </div>
-                <div class="gallery-cell">
-                    <video class="processVid" controls  poster="landingPage/processVids/posters/photoPoster-03.png" preload="metadata">
-                        <source src="landingPage/processVids/FINAL_PHOTO.mp4" type="video/mp4">
-                    </video>  
-                </div>
-                <div class="gallery-cell">
-                      
-                    <video class="processVid" controls poster="landingPage/processVids/posters/filmPoster-02.png" preload="metadata">
-                        <source src="landingPage/processVids/FINAL FILM.mp4" type="video/mp4">
-                    </video>  
-                </div>
-                <div class="gallery-cell">
-                     
-                    <video class="processVid" controls poster="landingPage/processVids/posters/webPoster-04.png" preload="metadata">
-                        <source src="landingPage/processVids/FINAL SOCIALWEB.mp4" type="video/mp4">
-                    </video>  
-                </div>
-                <div class="gallery-cell">
-                    <video class="processVid" controls poster="landingPage/processVids/posters/exhibitionPoster-01.png" preload="metadata">
-                        <source src="landingPage/processVids/FINAL EXHIBITION.mp4" type="video/mp4">
-                    </video>   
-                </div>
-            </div>
-            <div id="vidList">
-                <video class="listVid" controls  poster="landingPage/processVids/posters/week4-08.png" preload="metadata">
-                    <source src="landingPage/processVids/Week4_Web.mp4" type="video/mp4">
-                </video>
-                <video class="listVid" controls  poster="landingPage/processVids/posters/week3-07.png" preload="metadata">
-                    <source src="landingPage/processVids/WEEK3.mp4" type="video/mp4">
-                </video>
-                <video class="listVid" controls  poster="landingPage/processVids/posters/week2-06.png" preload="metadata">
-                    <source src="landingPage/processVids/WEEK2.mp4" type="video/mp4">
-                </video>
-                <video class="listVid" controls  poster="landingPage/processVids/posters/brandingPoster-05.png" preload="metadata">
-                    <source src="landingPage/processVids/FINALBRANDING SMALL.mp4" type="video/mp4">
-                </video>  
-                <video class="listVid" controls  poster="landingPage/processVids/posters/photoPoster-03.png" preload="metadata">
-                    <source src="landingPage/processVids/FINAL_PHOTO.mp4" type="video/mp4">
-                </video>
-                <video class="listVid" controls poster="landingPage/processVids/posters/filmPoster-02.png" preload="metadata">
-                    <source src="landingPage/processVids/FINAL FILM.mp4" type="video/mp4">
-                </video>  
-                <video class="listVid" controls poster="landingPage/processVids/posters/webPoster-04.png" preload="metadata">
-                    <source src="landingPage/processVids/FINAL SOCIALWEB.mp4" type="video/mp4">
-                </video>  
-                <video class="listVid" controls poster="landingPage/processVids/posters/exhibitionPoster-01.png" preload="metadata">
-                    <source src="landingPage/processVids/FINAL EXHIBITION.mp4" type="video/mp4">
-                </video>  
-            </div>
-        </div>
-    </div>
-    <div id="modalBg">
-        <div id="notifyModal">
-            <span id="closeModal">&times;</span>
-            <h2>Keep Me Posted</h2>
-            <p>Enter your email to get notified (once!) when our full site and exhibition are&nbsp;up.</p>
-            <!-- <input type="email" name="email" id="emailInput" placeholder="me123@gmail.com">
-            <br>
-            <button id="submitBtn">Notify Me!</button> -->
-            <form action="https://formspree.io/f/xdopewlo" method="POST">
-                <input name="Email" id="email" type="email" placeholder="me123@gmail.com" class="emailInput">
-                <button type="submit" id="submitBtn">Notify Me!</button>
-            </form>
-        </div>
-    </div>
-    <script src="landingPage/flickity/flickity.pkgd.min.js"></script>
-    <script src="landingPage/index.js"></script>
+
+<body style="padding-bottom: 0px!important; margin-bottom: -5px;">
+	<nav id="navWrap">
+		<span id="logoWrap">
+			<a href="./index.html" class="mainLink"><img src="./images/symbolBlack.png" alt="Synthesis logo" id="navLogo"></a>
+		</span>
+		<span id="navLinks">
+			<a href="./html/exhibition.html" class="navLink exLink">Exhibition</a>
+			<a href="./html/about.html" class="navLink aboutLink">About Us</a>
+			<a href="./html/process.html" class="navLink processLink">Process</a>
+		</span>
+		<span id="menuCircle">
+		</span>
+		<span id="menuIcon">
+			<span class="hamLine1 hamLine"></span>
+			<span class="hamLine2 hamLine"></span>
+			<span class="hamLine3 hamLine"></span>
+		</span>
+	</nav>
+	<span id="menu">
+		<span id="menuHeader">
+			<span id="logoWrap">
+				<a href="./index.html" class="mainLink"><img src="./images/symbolWhite.png" alt="Synthesis logo" id="menuLogo"></a>
+			</span>
+			<span id="menuXIcon">
+				<span id="xLine1"></span>
+				<span id="xLine2"></span>
+			</span>
+		</span>
+		<span id="menuLinks">
+			<a href="./html/exhibition.html" class="menuLink">Exhibition</a>
+			<a href="./html/about.html" class="menuLink">About Us</a>
+			<a href="./html/process.html" class="menuLink">Process</a>
+		</span>
+	</span>
+	<span id="welcome">
+		<h3>Experience Our Evolution</h3>
+	</span>
+	<div id="container"></div>
+	<div id="loader">
+		<img src="./images/symbolBlack.png" alt="Synthesis logo" id="loadLogo">
+		<h3>Loading...</h3>
+	</div>
+	<!-- <script>
+		$(window).on("load",function(){
+    		$("#loader").fadeOut("slow");
+		});
+	</script> -->
+	<script src="js/navMain.js"></script>
+	<script type="module" src="js/blobs.js"></script>
 </body>
 </html> 
