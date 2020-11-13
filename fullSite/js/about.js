@@ -87,7 +87,7 @@ let abby = new person('Abby Blend', 'abby-blend-96a363198', 'abbyblendart', 'abb
 let dani = new person('Danielle Berman', '', 'daniberman.dzn', 'daniberman.com','dani1.png', '473925447',
 "Hello! I’m Dani, a passionate creative who enjoys experimenting, researching, and learning! When I’m not designing you can probably find me creating memories or making some coffee to bring back to my Adobe file. I am constantly fascinated by all of the different ways to communicate visually and am grateful to have found my voice in design. I cannot wait to see what the future&nbsp;holds!");
 
-let carly = new person('Carly Blonski', 'carly-blonski-a60178130', 'carlyblonski.dzn', 'carlyblonski.com ','carly1.png', '473391054',
+let carly = new person('Carly Blonski', 'carly-blonski-a60178130', 'carlyblonski.dzn', 'carlyblonski.com ','carly1.png', '478775803',
 "Hi! I’m Carly Blonski! I’m in more engineering clubs than any non-engineer should ever be in and I’m super involved in THON. I love exploring historic buildings, architecture, theme parks, and looking at all of the details in their designs. When I’m not doing all of that, or serving at the State College classic, The Corner Room, you can catch me dancing and singing along to&nbsp;throwbacks.");
 
 let ron = new person('Ron Feinberg', 'ronald-feinberg-094379113', 're.fein', 'refein.com','ron1.png', '473497882',
@@ -102,7 +102,7 @@ let michaela = new person('Michaela Lucas', 'michaela-lucas-980371198', 'm_m_luc
 let cassie = new person('Cassie Luzenski', 'cassie-luzenski-628a97166', 'cassieluzenski', 'cassieluzenski.com','cassie1.png', '473278686',
 "Hi! I'm Cassie! I'm a graphic designer, photographer, chronic doodler and enthusiast of the color yellow. Outside of design you can find me curled up under a heated blanket watching my favorite tv show – Peaky Blinders – and eating pancakes (yes even for&nbsp;dinner).");
 
-let sarah = new person('Sarah Martin', 'sarah-martin-694079181', 'martindesign_', 'sarahmartindesign.com','sarah1.png', '473391054',
+let sarah = new person('Sarah Martin', 'sarah-martin-694079181', 'martindesign_', 'sarahmartindesign.com','sarah1.png', '478735975',
 "Hello friends, I’m Sarah! If I’m not thinking of witty comments to stir the pot a little bit, I’m more than likely thinking of how to create a high end photoshoot on a budget. I’m passionate about supporting real women and breaking unhealthy social norms. My weaknesses include smoothie bowls, fictional stories, cute animals, and mostly interior&nbsp;design.");
 
 let taylor = new person('Taylor Mazzarella', 'taylor-mazzarella-b2391b181', 'tmz.dzn', 'taylormazzarella.com','taylor1.png', '473537077',
